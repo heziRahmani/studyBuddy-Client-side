@@ -1,0 +1,14 @@
+.mainCssDashboard_container {
+  width: 100vw;
+  min-height: 100vh;
+  max-width: 100%;
+  background-color: white;
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.mainCssDashboard_box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

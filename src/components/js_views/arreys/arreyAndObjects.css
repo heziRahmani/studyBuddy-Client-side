@@ -1,0 +1,131 @@
+.arreyContainer {
+  line-height: 1.5;
+  height: max-content;
+}
+
+/* arreys header */
+.arreyHeader {
+  text-align: start;
+  font-size: 2em;
+  color: #1f1313;
+  /* text-shadow: 4px 3px 0 #a2a9d7; */
+  padding: 2em 1.4em 2em 1.4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  position: relative;
+}
+.arreyHeader h2 span {
+  position: relative;
+
+  /* background-color: #435E55FF; */
+  /* color: white; */
+}
+
+.arreyHeader h2 span::after {
+  position: absolute;
+  content: "";
+  height: 80px;
+  width: 70px;
+  background-color: #435e55ff;
+  opacity: 0.5;
+  right: 0;
+  top: -15px;
+}
+
+/* arreys main section */
+.arreyMainSection {
+}
+.singleArrey_titel {
+  line-height: 2.5;
+  font-size: var(--sub-headLine_font_size);
+  color: #222;
+
+  text-shadow: 1px 0px 1px #cccccc, 0px 1px 1px #eeeeee, 2px 1px 1px #cccccc,
+    1px 2px 1px #eeeeee, 3px 2px 1px #cccccc, 2px 3px 1px #eeeeee,
+    4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc,
+    4px 5px 1px #eeeeee, 6px 5px 1px #cccccc, 5px 6px 1px #eeeeee,
+    7px 6px 1px #cccccc;
+}
+.arrey_codeBox h4 {
+  font-size: var(--sub-headLine_font_size);
+  line-height: 1.5;
+}
+
+/* single arrey style */
+
+.arrey_codeBox {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+  justify-content: space-between;
+  line-height: 1.3;
+
+  /* box-shadow: #a2a9d7 0px 5px 5px 5px; */
+  border-radius: 10px;
+  /* background-color:lightgray ; */
+}
+
+.arrey_codeBox div {
+  word-wrap: break-word;
+  /* max-width: 40%; */
+  padding: 1em;
+
+  color: black;
+}
+.singleArrey_description {
+  font-size: var(--body_font_size);
+  line-height: 1.5;
+  color: #444444;
+}
+.jsCodBlock {
+  /* max-width: 40%; */
+  /* box-shadow: inset #435E55FF 5px 5px 35px 4px; */
+  background-color: #222;
+}
+
+.jsCodBlock ul {
+  list-style: none;
+}
+
+.jsCodBlock li {
+}
+
+.jsCodBlock pre {
+}
+.jsCodBlock p,
+.jsCodBlock pre {
+  white-space: break-spaces;
+  color: white;
+}
+.outputHeader {
+  padding: 0.3em 0 0.3em 0;
+}
+/*  */
+@media screen and (max-width: 800px) {
+  .arreyHeader {
+    padding: 1em;
+    flex-direction: column;
+  }
+  .arreyHeader h2 {
+    padding-bottom: 1em;
+  }
+  .arreyHeader h2 span {
+    position: relative;
+
+    /* background-color: #435E55FF; */
+    /* color: white; */
+  }
+
+  .arreyHeader h2 span::after {
+    position: absolute;
+    content: "";
+    height: 80px;
+    width: 70px;
+    background-color: #435e55ff;
+    opacity: 0.5;
+    right: 0;
+    top: -15px;
+  }
+}

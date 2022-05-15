@@ -1,0 +1,439 @@
+.toDo_main_container {
+  width: 100%;
+  margin: 0 auto;
+  /* height: 90vh; */
+  overflow-y: scroll;
+  /* margin: 0.5em 0em 2em 0em; */
+}
+/* header */
+.toDo_header_box {
+  position: relative;
+  width: 100%;
+  height: 200px;
+}
+.toDo_header_box h2 {
+  text-align: center;
+  font-size: 3em;
+  padding: 2em 1em;
+  color: darkgrey;
+  white-space: nowrap;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3em;
+  font-family: sans-serif;
+  letter-spacing: 0.1em;
+  transition: 0.3s;
+  text-shadow: 1px 1px 0 grey, 1px 2px 0 grey, 1px 3px 0 grey, 1px 4px 0 grey,
+    1px 5px 0 grey, 1px 6px 0 grey, 1px 7px 0 grey, 1px 8px 0 grey,
+    5px 13px 15px black;
+}
+
+.toDo_header_box h2:hover {
+  transition: 0.3s;
+  transform: scale(1.1), translate(-50%, -50%);
+  text-shadow: 1px -1px 0 grey, 1px -2px 0 grey, 1px -3px 0 grey,
+    1px -4px 0 grey, 1px -5px 0 grey, 1px -6px 0 grey, 1px -7px 0 grey,
+    1px -8px 0 grey, 5px -13px 15px black, 5px -13px 25px #808080;
+}
+/*  */
+.input_Form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 96%;
+  position: relative;
+  margin: 0 auto;
+  background-color: #3e3e3e;
+  color: whitesmoke;
+}
+
+.input_form_box {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.input_box,
+.textarea_box {
+  width: 100%;
+  border-radius: 10px;
+  margin: 1em;
+  padding: 20px 30px;
+  font-size: 25px;
+  border: none;
+  transition: 0.25s;
+  box-shadow: inset 0 0 5px #fff;
+}
+.textarea_box {
+}
+.form_submitBtn {
+  /* position: absolute;
+  right: 0; */
+  width: 50px;
+  height: 50px;
+  margin: 12px;
+  border-radius: 50px;
+  border: none;
+  font-size: 15px;
+  background-color: #454c5c;
+  transition: all 0.2s;
+  box-shadow: 0 0 10px #222;
+  color: whitesmoke;
+}
+.form_submitBtn:hover {
+  background-color: #717c94;
+}
+.form_submitBtn:active {
+  transform: scale(0.9);
+  box-shadow: 0 0 5px #222;
+}
+.toDo_select_box {
+  /* padding: 3em 1em; */
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+.toDo_select_box select {
+  border: none;
+  padding: 0.5;
+  width: 30%;
+  border-radius: 5px;
+  text-align: center;
+  margin: 0 1em 0 0em;
+}
+/* ToDo_cards.js cards section */
+.toDo_cards_container {
+  width: 100%;
+  display: flex;
+  gap: 1em;
+  justify-content: space-around;
+}
+.toDo_card_box {
+  width: 45%;
+  min-height: 200px;
+  border: 1px solid black;
+}
+.toDo_heade_box {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+/*  */
+.toTos_container {
+  display: flex;
+  /* flex-wrap: wrap; */
+  gap: 1em;
+  padding-top: 1em;
+}
+.single_toDo_container {
+  margin-bottom: 1em;
+}
+.singleToDo_li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 5rem;
+  position: relative;
+  gap: 1rem;
+
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 3px 5px rgba(255, 255, 255, 0.5),
+    0px 0px 10px rgba(0, 0, 0, 0.5);
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    45deg,
+    rgba(2, 0, 36, 0) 5%,
+    rgba(255, 255, 255, 0.5) 6%,
+    rgba(255, 255, 255, 0) 9%,
+    rgba(255, 255, 255, 0.5) 10%,
+    rgba(255, 255, 255, 0) 17%,
+    rgba(255, 255, 255, 0.5) 19%,
+    rgba(255, 255, 255, 0) 21%
+  );
+}
+.praioretyHigh {
+  background: linear-gradient(
+    45deg,
+    rgba(2, 0, 36, 0) 5%,
+    rgba(252, 118, 106, 0.5) 6%,
+    rgba(255, 255, 255, 0) 9%,
+    rgba(252, 118, 106, 0.5) 10%,
+    rgba(255, 255, 255, 0) 17%,
+    rgba(252, 118, 106, 0.5) 19%,
+    rgba(255, 255, 255, 0) 21%
+  );
+}
+.praioretyMedume {
+  background: linear-gradient(
+    45deg,
+    rgba(2, 0, 36, 0) 5%,
+    rgba(224, 224, 117, 0.5) 6%,
+    rgba(255, 255, 255, 0) 9%,
+    rgba(224, 224, 117, 0.5) 10%,
+    rgba(255, 255, 255, 0) 17%,
+    rgba(224, 224, 117, 0.5) 19%,
+    rgba(255, 255, 255, 0) 21%
+  );
+}
+.praioretyLow {
+  background: linear-gradient(
+    45deg,
+    rgba(2, 0, 36, 0) 5%,
+    rgb(34, 193, 195, 0.5) 6%,
+    rgba(255, 255, 255, 0) 9%,
+    rgb(34, 193, 195, 0.5) 10%,
+    rgba(255, 255, 255, 0) 17%,
+    rgb(34, 193, 195, 0.5) 19%,
+    rgba(255, 255, 255, 0) 21%
+  );
+}
+
+.input_box:focus {
+  box-shadow: 0 0 10px 1000px #222;
+  outline: none;
+}
+/* single to do */
+.singleToDo_container,
+.singleDoneToDo_container {
+  display: flex;
+  flex-direction: column;
+
+  letter-spacing: 1.5px;
+  /* border: 1px solid black; */
+  width: 50%;
+  justify-content: space-between;
+}
+.buttomCard_container {
+  justify-content: space-between;
+  width: 100%;
+}
+.buttomCard_container div {
+  margin: 0 1em 0 0.5em;
+}
+.singleToDoDIv_toDo {
+  flex: 50%;
+  padding: 0 0 0 1em;
+}
+.singleToDoDIv_toDo s {
+  text-decoration: line-through;
+  color: #717c94;
+}
+.singleToDoBtn_container {
+  display: flex;
+}
+.singleToDoBtn_container button {
+  background-color: transparent;
+  border: none;
+  padding: 0 1em;
+}
+.complited {
+  opacity: 0.5;
+  color: #3e3e3e !important;
+}
+.singleToDoDIv_praiorety {
+  height: 100%;
+  width: 100%;
+  /* background-color: lightsteelblue; */
+}
+.singleToDoDIv_praiorety {
+  height: 25px;
+  width: 25px !important;
+  clip-path: polygon(
+    50% 0%,
+    90% 20%,
+    100% 60%,
+    75% 100%,
+    25% 100%,
+    0% 60%,
+    10% 20%
+  );
+}
+/* update form style */
+
+.toDoFormDisplay {
+  display: none;
+}
+
+button,
+input {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+option {
+  /* background-color: #3e3e3e; */
+}
+.background {
+  display: flex;
+  min-height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 455px;
+}
+.toDo_select {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3em;
+}
+.toDo_form_submit_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.todo_footer {
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+}
+/* toDo_main_container */
+/* Media Queries */
+/*Any Mobile Device*/
+@media only screen and (max-width: 600px) {
+  .toDo_header_box {
+    height: 150px;
+  }
+  .toDo_header_box h2 {
+    padding: 0.5em;
+  }
+  .toDo_main_container {
+    width: 95%;
+    padding: 0.5em;
+    min-height: unset;
+    height: unset;
+  }
+  .input_Form {
+    width: 100%;
+  }
+  .input_form_box {
+    width: 100%;
+  }
+  .toDo_select_box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+  }
+  .toDo_select_box select {
+    width: 30%;
+    margin: 0 0.5em;
+  }
+  .textarea_box {
+    padding: 10px 15px;
+  }
+  .toDo_select {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3em;
+  }
+  .toDo_form_submit_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .todo_footer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  /* task section */
+  .toDo_cards_container {
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+  }
+  .toDo_card_box {
+    width: 100%;
+    min-height: 200px;
+    border: 1px solid black;
+  }
+  .buttomCard_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 100%;
+  }
+  .buttomCard_data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .singleToDoBtn_container {
+    display: flex;
+    justify-content: center;
+  }
+}
+/*Tablets Device*/
+@media only screen and (max-width: 1024px) {
+  .toDo_main_container {
+    width: 95%;
+    /* padding: 0.5em 0.5em 2em 0.5em; */
+  }
+  .input_Form {
+    width: 100%;
+  }
+  .input_form_box {
+    width: 100%;
+  }
+  .toDo_select_box {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+  }
+  .toDo_select_box select {
+    width: 30%;
+    margin: 0 0.5em;
+  }
+  .textarea_box {
+    padding: 10px 15px;
+  }
+  .toDo_select {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3em;
+  }
+  .toDo_form_submit_btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .todo_footer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .toDo_cards_container {
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+  }
+  .toDo_card_box {
+    width: 100%;
+    min-height: 200px;
+    border: 1px solid black;
+  }
+  .buttomCard_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 100%;
+  }
+  .buttomCard_data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .singleToDoBtn_container {
+    display: flex;
+    justify-content: center;
+  }
+}

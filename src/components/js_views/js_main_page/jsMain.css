@@ -1,0 +1,19 @@
+.jsDashboard_container {
+  display: flex;
+  min-height: 100vh;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.jsMainBody_container {
+  width: 70%;
+  margin: 0 auto;
+  overflow-y: scroll;
+}
+/*  */
+@media screen and (max-width: 400px) {
+  .jsMainBody_container {
+    width: 90%;
+  }
+}

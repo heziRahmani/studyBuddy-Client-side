@@ -1,0 +1,73 @@
+.adminDashboard_container {
+  min-height: 100vh;
+}
+/* header */
+.adminDashboard_header {
+}
+.adminDashboard_header h3 {
+  font-size: 3em;
+  padding: 1em;
+  text-align: center;
+}
+/* body */
+.adminDashboard_body_container {
+  width: 90%;
+  margin: 0 auto;
+}
+/* body header */
+.adminDashboard_body_container h3 {
+  font-size: 1.5em;
+  padding: 1em;
+  text-align: center;
+}
+/* cards */
+.admin_cards_main_box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  margin: 0 auto;
+
+  gap: 1em;
+}
+
+.adminDashboard_card_btn_li {
+  display: flex;
+}
+.adminDashboard_card_btn_li div {
+  display: flex;
+  padding: 0 1em 0 0;
+}
+/*  */
+/*Any Mobile Device*/
+@media only screen and (max-width: 600px) {
+  .admin_cards_main_box {
+    flex-direction: row;
+  }
+
+  .adminDashboard_card_btn_li {
+    display: flex;
+  }
+  .adminDashboard_card_btn_li div {
+    display: flex;
+    padding: 0 1em 0 0;
+  }
+}
+/*Tablets Device*/
+@media only screen and (max-width: 1024px) {
+  .toDo_main_container {
+    min-height: unset;
+  }
+  .admin_cards_main_box {
+    flex-direction: row;
+  }
+
+  .adminDashboard_card_btn_li {
+    display: flex;
+  }
+  .adminDashboard_card_btn_li div {
+    display: flex;
+    padding: 0 1em 0 0;
+  }
+}

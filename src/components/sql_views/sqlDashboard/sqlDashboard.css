@@ -1,0 +1,13 @@
+.mainSqlDashboard_container {
+  min-height: 100vh;
+  display: flex;
+}
+
+.mainSqlDashboard_box {
+  width: 100vw;
+}
+.sqlMainBody_box {
+  width: 70%;
+  margin: 0 auto;
+  overflow-y: scroll;
+}

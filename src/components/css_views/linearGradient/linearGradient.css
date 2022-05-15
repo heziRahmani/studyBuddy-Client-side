@@ -1,0 +1,45 @@
+/* background: linear-gradient(45deg, rgb(76, 0, 255), transparent); */
+/* background: linear-gradient(45deg, rgb(76, 0, 255), transparent),
+    rgb(216, 118, 255)
+      repeating-linear-gradient(
+        45deg,
+        rgb(183, 0, 255) 0%,
+        rgb(183, 0, 255) 5%,
+        transparent 5%,
+        transparent 10%
+      ); */
+/* background: linear-gradient(45deg, rgb(76, 0, 255), transparent),
+   
+      repeating-linear-gradient(
+        45deg,
+        rgb(183, 0, 255) 0%,
+        rgb(183, 0, 255) 5%,
+        transparent 5%,
+        transparent 10%
+      ),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(183, 0, 255, 0.5) 0%,
+      rgba(183, 0, 255, 0.5) 5%,
+      transparent 5%,
+      transparent 10%
+    ); */
+/* background: linear-gradient(45deg, rgb(81, 71, 107), transparent),
+    repeating-linear-gradient(
+      45deg,
+      rgba(183, 0, 255, 0.1) 0%,
+      rgba(183, 0, 255, 0.1) 5%,
+      transparent 5%,
+      transparent 10%,
+      rgba(9, 6, 10, 0.2) 10%,
+      rgba(10, 10, 10, 0.2) 11%,
+      transparent 11%,
+      transparent 13%
+    ),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(47, 37, 51, 0.2) 0%,
+      rgba(47, 19, 58, 0.2) 5%,
+      transparent 5%,
+      transparent 10%
+    ); */

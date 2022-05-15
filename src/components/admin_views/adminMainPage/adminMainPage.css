@@ -1,0 +1,17 @@
+.adminMain_container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  /* max-height: 100vh; */
+}
+
+.adminMain_budy {
+  width: 100%;
+  margin: 0 auto;
+}
+.adminMain_body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-y: scroll;
+}
