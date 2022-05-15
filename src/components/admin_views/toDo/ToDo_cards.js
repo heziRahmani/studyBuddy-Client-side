@@ -9,6 +9,7 @@ function ToDo_cards() {
   const [searchInput, setSearchInput] = useState("");
   const [searchInputDoneTasks, setSearchInputDoneTasks] = useState("");
   //geting data from fireStore
+
   const q = query(toDoRef);
   let { data } = useCollection(q);
   useEffect(() => {
