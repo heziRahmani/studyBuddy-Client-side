@@ -1,12 +1,6 @@
 import { lazy, Suspense, useState } from "react";
 import "./App.css";
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Navigate,
-  useNavigate,
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Regex from "./components/js_views/regex/Regex";
 import OneLiners from "./components/js_views/OneLiners/OneLiners";
 import CssDashboard from "./components/css_views/cssDashboard/CssDashboard";
@@ -15,7 +9,6 @@ import AdminDashboard from "./components/admin_views/adminDashboard/AdminDashboa
 import SignInForm from "./components/admin_views/auth/SignInForm";
 import AdminMainPage from "./components/admin_views/adminMainPage/AdminMainPage";
 // import ToDo from "./components/toDo/ToDo";
-import UpdateToDoForm from "./components/toDo/UpdateToDoForm";
 import { UpdateFormContext_provider } from "./utilities/context/updateFormContext";
 import LandingPage from "./components/landingPage/LandingPage";
 import ButtonsUi from "./components/css_views/buttons/Buttons";
@@ -29,6 +22,9 @@ import ToDo from "./components/admin_views/toDo/ToDo";
 const JsMain = lazy(() => import("./components/js_views/js_main_page/JsMain"));
 const Arreys = lazy(() => import("./components/js_views/arreys/Arreys"));
 //css imports
+const CssDividers = lazy(() =>
+  import("./components/css_views/css_dividers.js/Css_dividers")
+);
 //html imports
 function App() {
   const [state, setstate] = useState(null);
@@ -49,7 +45,6 @@ function App() {
                 <Route path={"signin"} element={<SignInForm />} />
                 <Route path={"adminDashboard"} element={<AdminDashboard />} />
                 <Route path={"todo"} element={<ToDo />} />
-                {/* <Route  path={"UpdateToDoForm"} element={<UpdateToDoForm />} /> */}
               </Route>
 
               {/* js view routs */}
@@ -57,12 +52,12 @@ function App() {
                 <Route path={"arreyMethod"} element={<Arreys />} />
                 <Route path={"Regex"} element={<Regex />} />
                 <Route path={"OneLiners"} element={<OneLiners />} />
-                {/* <Route path={"dashboard"} element={<Dashboards/>} /> */}
               </Route>
 
               {/* css view routs */}
               <Route path={"/css"} element={<CssDashboard />}>
                 <Route path='btn' element={<ButtonsUi />} />
+                <Route path='dividers' element={<CssDividers />} />
               </Route>
               {/* sql view routs */}
               <Route path={"/sql"} element={<SqlDashboard />}>

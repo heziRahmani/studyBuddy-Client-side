@@ -41,7 +41,7 @@ export default function SignInForm() {
           className='signInForm'>
           <div className='signInForm_box'>
             <div className='signInForm_group'>
-              <label>E-Mail</label>
+              <label>E-Mail:</label>
               <input
                 className='signInForm_group'
                 placeholder='Enter User Name'
@@ -49,7 +49,7 @@ export default function SignInForm() {
               />
             </div>
             <div className='signInForm_group'>
-              <label>Password</label>
+              <label>Password:</label>
               <input
                 className='app-form-control'
                 placeholder='Enter Password'
@@ -58,8 +58,12 @@ export default function SignInForm() {
             </div>
 
             <div className='signInForm_group buttons'>
-              <button className='signInForm-form-button'>CANCEL</button>
-              <button type='submit' className='signInForm-form-button'>
+              {/* <button className='signInForm-form-button button-30'>
+                CANCEL
+              </button> */}
+              <button
+                type='submit'
+                className='signInForm-form-button button-30'>
                 Log In
               </button>
             </div>

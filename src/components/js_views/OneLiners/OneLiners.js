@@ -1,9 +1,10 @@
 import { query } from "firebase/firestore";
-import React, { useState } from "react";
+import React, { useState, lazy } from "react";
 import { JsOneLinersRef } from "../../../utilities/fireBase_connection/FireBaseConnection";
 import { useCollection } from "../../../utilities/hooks/useCollection";
 import "./oneLiners.css";
-import SingleOneLiner from "./SingleOneLiner";
+
+const SingleOneLiner = lazy(() => import("./SingleOneLiner"));
 export default function OneLiners() {
   const [searchInput, setSearchInput] = useState("");
   const q2 = query(JsOneLinersRef);

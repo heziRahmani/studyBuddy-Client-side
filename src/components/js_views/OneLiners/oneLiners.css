@@ -1,5 +1,6 @@
 .jsOneLiners_container {
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
 }
 /* jsOneLiners header */
 .jsOneLiners_Header_Box {

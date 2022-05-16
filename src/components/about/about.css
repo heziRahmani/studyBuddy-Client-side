@@ -3,6 +3,8 @@
 }
 .mainAbout_container {
   display: flex;
+  position: relative;
+  height: 100vh;
   background-image: linear-gradient(
       315deg,
       rgba(94, 94, 94, 0.02) 0%,
@@ -320,11 +322,11 @@ footer span i {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  min-height: 500px;
 }
 .stack_box {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   gap: 3em;
   align-items: center;
   justify-content: center;
@@ -414,6 +416,15 @@ footer span i {
       bottom: 16px;
     }
   }
+  .about_intro_box {
+    padding: 2em;
+  }
+  .stack_box {
+    padding-bottom: 1em;
+  }
+  .icon_box {
+    max-width: 100px;
+  }
 }
 @media only screen and (max-width: 1024px) {
   .container {
@@ -422,5 +433,8 @@ footer span i {
   }
   .container .box {
     width: auto;
+  }
+  .icon_box {
+    /* max-width: 200px; */
   }
 }

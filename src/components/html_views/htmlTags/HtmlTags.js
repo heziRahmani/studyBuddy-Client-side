@@ -1,9 +1,10 @@
-import { onSnapshot, query } from "firebase/firestore";
-import React, { useEffect, useState } from "react";
+import { query } from "firebase/firestore";
+import React, { lazy } from "react";
+
 import { collhtmlTagsRef } from "../../../utilities/fireBase_connection/FireBaseConnection";
 import { useCollection } from "../../../utilities/hooks/useCollection";
 import "./htmlTags.css";
-import SingleHtmlTag from "./singleHtmlTag";
+const SingleHtmlTag = lazy(() => import("./singleHtmlTag"));
 
 export default function HtmlTags() {
   const q2 = query(collhtmlTagsRef);

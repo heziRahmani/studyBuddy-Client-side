@@ -45,7 +45,10 @@
   width: 96%;
   position: relative;
   margin: 0 auto;
-  background-color: #3e3e3e;
+  background: linear-gradient(
+    rgba(89, 88, 90, 0.85),
+    /* rgba(23, 23, 63, 0.8), */ rgba(34, 34, 34, 0.85)
+  );
   color: whitesmoke;
 }
 
@@ -100,7 +103,7 @@
 .toDo_select_box select {
   border: none;
   padding: 0.5;
-  width: 30%;
+  width: 45%;
   border-radius: 5px;
   text-align: center;
   margin: 0 1em 0 0em;
@@ -117,10 +120,16 @@
   min-height: 200px;
   border: 1px solid black;
 }
-.toDo_heade_box {
+.single_toDo_header_box {
   text-align: center;
   display: flex;
   justify-content: space-between;
+  min-height: 67px;
+  align-items: center;
+  margin: 0.5em;
+}
+.single_toDo_header_box h4 {
+  font-size: 1.5em;
 }
 /*  */
 .toTos_container {
@@ -156,6 +165,7 @@
     rgba(255, 255, 255, 0) 21%
   );
 }
+/* ? */
 .praioretyHigh {
   background: linear-gradient(
     45deg,
@@ -436,4 +446,73 @@ option {
     display: flex;
     justify-content: center;
   }
+}
+/*  */
+
+.search-box {
+  width: fit-content;
+  height: fit-content;
+  position: relative;
+}
+.input-search {
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all 0.5s ease-in-out;
+  background-color: rgb(216, 213, 223);
+  padding-right: 40px;
+  color: rgb(55, 59, 66);
+}
+.input-search::placeholder {
+  color: rgb(55, 59, 66);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.btn-search {
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color: rgb(55, 59, 66);
+  background-color: transparent;
+  pointer-events: painted;
+}
+.btn-search:focus ~ .input-search {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+.input-search:focus {
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.11, 0.35, 2);
+}
+
+/*  footer   */
+footer {
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 999;
 }

@@ -1,10 +1,10 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { lazy, useState } from "react";
 
 import "./arreyAndObjects.css";
 import { query } from "firebase/firestore";
 import { collArreyRef } from "../../../utilities/fireBase_connection/FireBaseConnection";
-import SingleArreyData from "./SingleArreyData";
 import { useCollection } from "../../../utilities/hooks/useCollection";
+const SingleArreyData = lazy(() => import("./SingleArreyData"));
 
 export default function Arreys() {
   const [searchInput, setSearchInput] = useState("");
@@ -16,7 +16,6 @@ export default function Arreys() {
   let { data } = useCollection(q2);
   return (
     <div className='arreyContainer'>
-      {/* <button onClick={() => dispach(getAllDocs())}>saddasdas</button> */}
       <div id='arreyHeader' className='arreyHeader'>
         <h2>
           Arrey meth<span>ods</span>

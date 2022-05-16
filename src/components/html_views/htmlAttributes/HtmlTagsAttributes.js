@@ -9,7 +9,7 @@ export default function HtmlTagsAttributes({ data }) {
     <div className='single_attribute_box'>
       {name ? <h3>{name}</h3> : <h3>no data</h3>}
       {description ? <p>{description}</p> : <p>no data</p>}
-      <p>attribute excemple</p>
+      {/* <p>attribute excemple</p> */}
     </div>
   );
 }

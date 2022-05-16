@@ -1,6 +1,8 @@
 .arreyContainer {
   line-height: 1.5;
   height: max-content;
+  width: 80%;
+  margin: 0 auto;
 }
 
 /* arreys header */
@@ -36,6 +38,7 @@
 
 /* arreys main section */
 .arreyMainSection {
+  overflow-y: scroll;
 }
 .singleArrey_titel {
   line-height: 2.5;

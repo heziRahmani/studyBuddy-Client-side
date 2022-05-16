@@ -1,6 +1,5 @@
-import axios from "axios";
 import { query } from "firebase/firestore";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { sqlGeneralRef } from "../../../utilities/fireBase_connection/FireBaseConnection";
 import { useCollection } from "../../../utilities/hooks/useCollection";
 import "../sqlGeneral/sqlGeneral.css";
@@ -12,7 +11,7 @@ export default function SqlGeneral() {
   let { data } = useCollection(q2);
 
   return (
-    <div>
+    <div className='sqlGeneral_container'>
       <div id='sqlHeader' className='sqlHeader'>
         <h2>
           Sql Gene<span>ral</span>

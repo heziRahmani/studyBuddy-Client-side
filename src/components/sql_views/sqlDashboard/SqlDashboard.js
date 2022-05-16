@@ -5,11 +5,11 @@ import "../sqlDashboard/sqlDashboard.css";
 function SqlDashboard() {
   return (
     <Suspense fallback={<div>loading...</div>}>
-      <div className='mainSqlDashboard_container'>
+      <div className='mainSqlDashboard_container '>
         <SideBar />
 
         <div id='mainSqlDashboard_box' className='mainSqlDashboard_box'>
-          <div className='sqlMainBody_box'>
+          <div className='sqlMainBody_box '>
             <Outlet />
           </div>
         </div>

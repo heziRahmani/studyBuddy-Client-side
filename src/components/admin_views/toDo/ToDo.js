@@ -1,9 +1,10 @@
-import React, { useRef, useState, useEffect } from "react";
-import { toDoRef } from "../../../utilities/fireBase_connection/FireBaseConnection";
-import useAddDoc from "../../../utilities/hooks/useAddDoc";
-import ToDoForm from "./ToDoForm";
-import ToDo_cards from "./ToDo_cards";
-import { Outlet, useNavigate } from "react-router";
+import React, { lazy, useEffect } from "react";
+
+import { useNavigate } from "react-router";
+import "./toDo.css";
+
+const ToDoForm = lazy(() => import("./ToDoForm"));
+const ToDo_cards = lazy(() => import("./ToDo_cards"));
 function ToDo() {
   const _navigate = useNavigate();
   useEffect(() => {

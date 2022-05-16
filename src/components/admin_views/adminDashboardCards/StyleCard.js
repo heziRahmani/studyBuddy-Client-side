@@ -99,7 +99,7 @@ function StyleCard({ data }) {
                               _toDoRef.current.value
                             );
                           }}>
-                          <AiOutlineCheck />1
+                          <AiFillEdit />
                         </button>
                       </div>
                       <div>

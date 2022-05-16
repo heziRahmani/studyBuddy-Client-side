@@ -98,7 +98,7 @@ function BugsCard({ data }) {
                               _toDoRef.current.value
                             );
                           }}>
-                          <AiFillEdit />1
+                          <AiFillEdit />
                         </button>
                       </div>
                       <div>

@@ -4,34 +4,30 @@ import { toDoRef } from "../../../utilities/fireBase_connection/FireBaseConnecti
 import { useCollection } from "../../../utilities/hooks/useCollection";
 import Single_toDo from "./Single_toDo";
 import Single_done_toDo from "./Single_done_toDo";
+import { BiSearchAlt } from "react-icons/bi";
 function ToDo_cards() {
-  const [state, setstate] = useState([]);
   const [searchInput, setSearchInput] = useState("");
   const [searchInputDoneTasks, setSearchInputDoneTasks] = useState("");
   //geting data from fireStore
 
   const q = query(toDoRef);
   let { data } = useCollection(q);
-  useEffect(() => {
-    setstate(data);
-    console.log();
-  }, [data]);
+
   return (
     <div className='toDo_cards_container'>
       <div className='toDo_card_box'>
-        <div className='toDo_heade_box'>
+        <div className='single_toDo_header_box'>
           <h4>Need To Do</h4>
-          <div className='searchBox'>
-            <div className='searchShadowBox'></div>
+          <div className='search-box'>
+            <button class='btn-search'>
+              <BiSearchAlt />
+            </button>
             <input
-              type={"text"}
-              className='searchInput'
               onChange={(e) => setSearchInput(e.target.value)}
-              placeholder='SEARCH'
+              type='text'
+              class='input-search'
+              placeholder='Type to Search...'
             />
-            <ion-icon
-              className='ion-icon_search'
-              name='search-outline'></ion-icon>
           </div>
         </div>
 
@@ -56,19 +52,18 @@ function ToDo_cards() {
         </ul>
       </div>
       <div className='toDo_card_box'>
-        <div className='toDo_heade_box'>
+        <div className='single_toDo_header_box'>
           <h4>Need To Do</h4>
-          <div className='searchBox'>
-            <div className='searchShadowBox'></div>
+          <div className='search-box'>
+            <button class='btn-search'>
+              <BiSearchAlt />
+            </button>
             <input
-              type={"text"}
-              className='searchInput'
               onChange={(e) => setSearchInputDoneTasks(e.target.value)}
-              placeholder='SEARCH'
+              type='text'
+              class='input-search'
+              placeholder='Type to Search...'
             />
-            <ion-icon
-              className='ion-icon_search'
-              name='search-outline'></ion-icon>
           </div>
         </div>
 

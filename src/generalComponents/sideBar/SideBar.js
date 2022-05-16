@@ -9,7 +9,7 @@ export default function SideBar() {
 
   useEffect(() => {
     //header routs
-    //TO-DO:refactor
+
     SideBarData.map((item) => {
       if (window.location.pathname.includes(item.link)) {
         setSvg(item.svg);
@@ -17,20 +17,16 @@ export default function SideBar() {
       }
     });
   }, []);
-
   //end header routs
+
   // tuggle sideBar function
   function tuggleHendeler() {
     const icon = document.querySelector(".icon");
     const sideBar = document.querySelector("#sideBarContainer");
 
-    // icon.addEventListener("click", (event) => {
     icon.classList.toggle("open");
-    // });
 
     sideBar.classList.toggle("sideBarContainerOpen");
-    // document.querySelectorAll("");
-    // setAttribute(‘id’,‘para-1’);
   }
 
   return (
@@ -52,14 +48,27 @@ export default function SideBar() {
       </div>
       <div id='sideBarContainer' className='sideBarContainer'>
         {/* sideBar header */}
+
         <div id='sideBarHeader' className='sideBarHeader'>
           <svg
             id='jsHeader'
             width='80%'
             height='80%'
             viewBox={svgViewBox}
-            fill='none'
-            xmlns='http://www.w3.org/2000/svg'>
+            fill='none'>
+            <defs>
+              <linearGradient id='grad1' x1='0%' y1='0%' x2='100%' y2='0%'>
+                <stop
+                  offset='0%'
+                  style={{ stopColor: "rgb(255,0,0)", stopOpacity: 0 }}
+                />
+                <stop
+                  offset='100%'
+                  style={{ stopColor: "rgb(255,0,0)", stopOpacity: 0 }}
+                />
+              </linearGradient>
+            </defs>
+            <ellipse cx='200' cy='70' rx='85' ry='55' fill='url(#grad1)' />
             <path d={svg ? svg : ""} stroke='#ffffff' />
           </svg>
         </div>

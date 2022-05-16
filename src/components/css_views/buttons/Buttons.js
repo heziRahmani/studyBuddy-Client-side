@@ -116,7 +116,7 @@ export default function ButtonsUi() {
         <div className='css_btn_box btnBox2'>
           <button className='glich_btn'>AVAILABLE NOW</button>
         </div>
-        {/*,btn3  */}
+        {/*next expending,btn3  */}
         <div className='css_btn_box btnBox3'>
           <div className='wrapper'>
             <a className='cta' href='#'>
@@ -152,10 +152,10 @@ export default function ButtonsUi() {
             </a>
           </div>
         </div>
-        {/* btn4 */}
+        {/*back ligth circles, btn4 */}
         <div className='css_btn_box btnBox4'>
           <div>
-            <div className='container'>
+            <div className='btnBox4_container'>
               <ul>
                 <li>
                   <a href='#'>
@@ -182,7 +182,7 @@ export default function ButtonsUi() {
             </div>
           </div>
         </div>
-        {/* btn5 */}
+        {/* border animation,btn5 */}
         <div className='css_btn_box btnBox5'>
           <ul>
             <li>
@@ -214,7 +214,7 @@ export default function ButtonsUi() {
             </li>
           </ul>
         </div>
-        {/* btn6 */}
+        {/*plus minus expends btn6 */}
         <div className='css_btn_box btnBox6'>
           <div className='btnbox6_single_div1'>
             <button className='icon-btn add-btn'>
@@ -241,7 +241,7 @@ export default function ButtonsUi() {
             </div>
           </div>
         </div>
-        {/* btn8 */}
+        {/* btn8 delete animeted x*/}
         <div className='css_btn_box btnBox8'>
           <button className='noselect'>
             <span className='text'>Delete</span>
@@ -256,11 +256,11 @@ export default function ButtonsUi() {
             </span>
           </button>
         </div>
-        {/* btn9 */}
+        {/* btn9 glass*/}
         <div className='css_btn_box btnBox9'>
           <button className='noselect'>Glass</button>
         </div>
-        {/* btn10 */}
+        {/* btn10 forword back play*/}
         <div className='css_btn_box btnBox10'>
           <div className='frame'>
             <span className='btn'>
@@ -274,8 +274,8 @@ export default function ButtonsUi() {
             </span>
           </div>
         </div>
-        <div className='css_btn_box btnBox'></div>
-        <div className='css_btn_box btnBox'></div>
+        <div className='css_btn_box btnBox11'></div>
+        <div className='css_btn_box btnBox11'></div>
       </div>
     </div>
   );

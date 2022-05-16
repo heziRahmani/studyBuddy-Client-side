@@ -18,7 +18,11 @@ ul li {
   list-style: none;
   list-style-type: none;
 }
-
+.hiddeScroll {
+  overflow: hidden !important;
+  /* overflow-y: hidden !important; */
+  max-height: 100vh;
+}
 :root {
   /*colors*/
   --ligth-readient-two-colors: linear-gradient(
@@ -251,7 +255,9 @@ ul li {
 ::-webkit-scrollbar-thumb:hover {
   background: transparent;
 }
+
 /*end scroll bar style */
+
 /* search */
 .searchBox {
   position: relative;

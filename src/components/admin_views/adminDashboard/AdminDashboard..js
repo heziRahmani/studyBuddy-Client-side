@@ -63,7 +63,7 @@ export default function AdminDashboard() {
 
   return (
     <Suspense fallback={<div>loading...</div>}>
-      <section className='adminDashboard_container'>
+      <section className='adminDashboard_container overflowHidden'>
         <header className='adminDashboard_header'>
           <h3>Admin Dashbord</h3>
         </header>

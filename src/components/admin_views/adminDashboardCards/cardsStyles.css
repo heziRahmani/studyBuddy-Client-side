@@ -21,6 +21,28 @@
   min-height: 15em;
   overflow: hidden scroll;
 }
+.single_admin_Card_box ul::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
+  background-color: transparent;
+}
+
+.single_admin_Card_box ul::-webkit-scrollbar {
+  width: 10px;
+  background-color: transparent;
+}
+
+.single_admin_Card_box ul::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  background-image: -webkit-linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 25%,
+    transparent 100%,
+    rgba(0, 0, 0, 1) 75%,
+    transparent
+  );
+}
+
 .single_admin_Card_box ul li {
   padding: 0.5em;
   margin: 0.5em;
@@ -70,6 +92,10 @@
   .adminDashboard_card_btn_li div {
     display: flex;
     padding: 0 1em 0 0;
+  }
+  .singleToDoDIv_praiorety_box {
+    display: flex;
+    padding-bottom: 0.3em;
   }
 }
 /*Tablets Device*/

@@ -1,9 +1,10 @@
-import React, { useState, useRef } from "react";
+import React, { useState, lazy } from "react";
 
 import { useSearch } from "../../../utilities/hooks/useSearch";
 
-import HtmlTagsAttributes from "../htmlAttributes/HtmlTagsAttributes";
-
+const HtmlTagsAttributes = lazy(() =>
+  import("../htmlAttributes/HtmlTagsAttributes")
+);
 export default function SingleHtmlTag({ tagData }) {
   const [attributeName, setattributeName] = useState("");
 
@@ -42,6 +43,7 @@ export default function SingleHtmlTag({ tagData }) {
           </div>
         </div>
       </div>
+      <div className='htmlSingleTagDivider'></div>
     </>
   );
 }
