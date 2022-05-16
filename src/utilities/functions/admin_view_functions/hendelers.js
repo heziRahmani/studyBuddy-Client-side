@@ -25,21 +25,11 @@ export function removeFromDataBaseHendeler(collName, id) {
 /**
  *still needs work
  * @param {*} _id
- * @param {*} editeble
- * @param {*} _prioretyRef
  * @param {*} _statusRef
  * @param {*} _titelRef
  * @param {*} _toDoRef
- * @param {*} createdDateTime
- * @param {*} _tagRef
  */
-export function updateDataBasHendeler(
-  _id,
-
-  _statusRef,
-  _titelRef,
-  _toDoRef
-) {
+export function updateDataBasHendeler(_id, _statusRef, _titelRef, _toDoRef) {
   const docRef = doc(db, "toDo", _id);
 
   updateDoc(docRef, {

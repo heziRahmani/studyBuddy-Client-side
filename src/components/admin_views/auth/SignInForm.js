@@ -1,9 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import { Outlet, useNavigate } from "react-router";
-// import { creatUser, signInFunc, signOutFunc } from '../../fireBase_connection/FireBaseConnection';
 
 import { useSignIn } from "../../../utilities/hooks/useSignIn";
-import AdminNavBar from "../../../generalComponents/navBar/NavBar";
+
 // import AdminSideBar from '../adminSideBar/AdminSideBar';
 import "./signInForm.css";
 export default function SignInForm() {
@@ -31,63 +30,41 @@ export default function SignInForm() {
   }, [data]);
 
   return (
-    <div>
-      <Outlet />
-      <div className='background'>
-        <div className='container'>
-          <div className='screen'>
-            <div className='screen-header'>
-              <div className='screen-header-left'>
-                <div className='screen-header-button close'></div>
-                <div className='screen-header-button maximize'></div>
-                <div className='screen-header-button minimize'></div>
-              </div>
-              <div className='screen-header-right'>
-                <div className='screen-header-ellipsis'></div>
-                <div className='screen-header-ellipsis'></div>
-                <div className='screen-header-ellipsis'></div>
-              </div>
+    <div className='signIn_form_container'>
+      <div className='signIn_form_box'>
+        <div className='signIn_form_titel'>
+          <span>Sign In</span>
+        </div>
+        <form
+          onSubmit={onSubmitHendeler}
+          id='signInForm'
+          className='signInForm'>
+          <div className='signInForm_box'>
+            <div className='signInForm_group'>
+              <label>E-Mail</label>
+              <input
+                className='signInForm_group'
+                placeholder='Enter User Name'
+                ref={_emailRef}
+              />
             </div>
-            <div className='screen-body'>
-              <div className='screen-body-item left'>
-                <div className='app-title'>
-                  <span>Sign In</span>
-                  {/* <span>Arreys</span> */}
-                </div>
-              </div>
-              <form
-                onSubmit={onSubmitHendeler}
-                id='signInForm'
-                className='screen-body-item '>
-                <div className='app-form'>
-                  <div className='app-form-group'>
-                    <label>E-Mail</label>
-                    <input
-                      className='app-form-control'
-                      placeholder='Enter User Name'
-                      ref={_emailRef}
-                    />
-                  </div>
-                  <div className='app-form-group'>
-                    <label>Password</label>
-                    <input
-                      className='app-form-control'
-                      placeholder='Enter Password'
-                      ref={_passwordRef}
-                    />
-                  </div>
+            <div className='signInForm_group'>
+              <label>Password</label>
+              <input
+                className='app-form-control'
+                placeholder='Enter Password'
+                ref={_passwordRef}
+              />
+            </div>
 
-                  <div className='app-form-group buttons'>
-                    <button className='app-form-button'>CANCEL</button>
-                    <button type='submit' className='app-form-button'>
-                      Log In
-                    </button>
-                  </div>
-                </div>
-              </form>
+            <div className='signInForm_group buttons'>
+              <button className='signInForm-form-button'>CANCEL</button>
+              <button type='submit' className='signInForm-form-button'>
+                Log In
+              </button>
             </div>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   );
