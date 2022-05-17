@@ -1,6 +1,7 @@
 import React, { lazy, useEffect } from "react";
 
 import { useNavigate } from "react-router";
+import { FcTodoList } from "react-icons/fc";
 import "./toDo.css";
 
 const ToDoForm = lazy(() => import("./ToDoForm"));
@@ -18,6 +19,7 @@ function ToDo() {
     <div className='toDo_main_container'>
       <div className='toDo_header_box'>
         <h2>Tasks Manager</h2>
+        <FcTodoList />
       </div>
       <ToDoForm />
       <div className='toTos_container'>

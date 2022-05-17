@@ -76,7 +76,8 @@
     flex-direction: column;
   }
   .jsOneLiners_Header_Box h2 {
-    padding-bottom: 1em;
+    padding: 1em 0;
+    font-size: 1.3em;
   }
   .jsOneLiners_Header_Box {
     padding: 1em 0em 1em 0em;

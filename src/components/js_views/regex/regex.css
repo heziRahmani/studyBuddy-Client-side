@@ -26,3 +26,14 @@
   width: 50%;
   text-align: start;
 }
+
+@media screen and (max-width: 600px) {
+  .regexBody_container {
+    flex-direction: column;
+    overflow-x: hidden;
+  }
+  .regex_box {
+    width: 80%;
+    margin: 1em auto;
+  }
+}

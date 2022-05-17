@@ -269,9 +269,9 @@ ul li {
   font-family: var(--font-Source_Code_Pro);
   transition: 0.7s;
 }
-.searchBox:hover {
+/* .searchBox:hover {
   width: 400px;
-}
+} */
 .searchBox::before {
   content: "";
   position: absolute;
@@ -347,12 +347,12 @@ ul li {
 /*  */
 @media screen and (max-width: 400px) {
   .searchBox {
-    width: 90%;
+    width: 100%;
   }
 }
 @media screen and (max-width: 520px) {
   .searchBox {
-    width: 90%;
+    width: 100%;
   }
   .screen-body {
     flex-direction: column;
@@ -377,7 +377,7 @@ ul li {
 
 @media screen and (max-width: 800px) {
   .searchBox {
-    width: 90%;
+    width: 100%;
   }
   .screen-body {
     padding: 40px;

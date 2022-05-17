@@ -19,7 +19,7 @@ export default function SingleHtmlTag({ tagData }) {
         </div>
         <div className='descriptiondiv tagBox'>
           <div className='header'>Tag discription</div>
-          {tagData.description}
+          <div>{tagData.description}</div>
         </div>
         <div className='tagBox'>
           <div className='header'>Tag exampleRef</div>

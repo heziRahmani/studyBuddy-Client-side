@@ -1,23 +1,18 @@
-import React, { Suspense } from "react";
-import { Outlet } from "react-router-dom";
-import SideBar from "../../generalComponents/sideBar/SideBar";
-import {
-  IoLogoCss3,
-  IoLogoJavascript,
-  IoLogoHtml5,
-  IoIosPulse,
-  IoMdStarHalf,
-} from "react-icons/io";
-import { IoLogoFirebase } from "react-icons/io5";
+import React, { Suspense, lazy } from "react";
 
-import { FaReact, FaJs, FaHome } from "react-icons/fa";
+import { IoLogoCss3, IoLogoJavascript, IoLogoHtml5 } from "react-icons/io";
+import { IoLogoFirebase } from "react-icons/io5";
+import { DiGithubAlt, DiGithubFull } from "react-icons/di";
+
+import { FaReact } from "react-icons/fa";
 import "./about.css";
+const SideBar = lazy(() => import("../../generalComponents/sideBar/SideBar"));
 function About() {
   return (
     <Suspense fallback={<div>loading...</div>}>
       <div className='mainAbout_container '>
         <SideBar />
-        {/* <CssSideBar/> */}
+
         <div id='mainAbout_box' className='mainAbout_box '>
           <div className='aboutHeader container'>
             <div class='box'>
@@ -69,6 +64,23 @@ function About() {
             <div className='stack_data'>
               <p></p>
             </div>
+          </div>
+          <div className='links_container'>
+            <a
+              href='https://github.com/heziRahmani/studyBuddy-Client-side_2022'
+              target={"blank"}>
+              <div className='gitHub_link_titel_box linkBox'>
+                <div className='gitHub_link_titel linkBox'>
+                  <h4>Link To the Project in</h4>
+                </div>
+                <div className='gitHub_link_titel_icon_box'>
+                  <DiGithubFull className='gitHub_icon' />
+                </div>
+              </div>
+              <div className='gitHub_link_Box_cat linkBox'>
+                <DiGithubAlt className='gitHub_icon_cat' />
+              </div>
+            </a>
           </div>
         </div>
       </div>

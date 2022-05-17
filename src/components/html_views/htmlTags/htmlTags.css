@@ -31,7 +31,10 @@
   );
 }
 /*singleHtmlTag.js style  */
-
+.tagMainBox {
+  overflow: hidden;
+  margin: 1em 0;
+}
 .tagBox {
   display: flex;
   line-height: 2em;
@@ -104,4 +107,19 @@
   border: 1px solid rgb(48, 49, 51);
   border-radius: 50%;
   box-shadow: inset 0 0 0 2px white, 0 0 0 4px white;
+}
+/*  */
+@media screen and (max-width: 600px) {
+  .tagBox {
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .tagBox div {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .tagBox p {
+    text-align: center;
+  }
 }

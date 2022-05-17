@@ -309,6 +309,7 @@ option {
   }
   .toDo_header_box h2 {
     padding: 0.5em;
+    white-space: pre-wrap;
   }
   .toDo_main_container {
     width: 95%;
