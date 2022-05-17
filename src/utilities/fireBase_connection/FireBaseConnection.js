@@ -1,3 +1,5 @@
+//env imports
+
 //auth
 import {
   getAuth, //function that triger the aute prosses
@@ -7,6 +9,14 @@ import {
   onAuthStateChanged, //lets us know wen the user is signdin or out in real time
 } from "firebase/auth";
 
+const {
+  REACT_APP_apiKey,
+  REACT_APP_authDomain,
+  REACT_APP_projectId,
+  REACT_APP_storageBucket,
+  REACT_APP_messagingSenderId,
+  REACT_APP_appId,
+} = process.env;
 const { initializeApp } = require("firebase/app");
 const {
   getFirestore,
@@ -26,12 +36,12 @@ const {
 
 //TO-DO: create an .env file fore firebaseConfig
 const firebaseConfig = {
-  apiKey: "AIzaSyAbPZibCSrcmKfdFQWq2TgVlbeGXl0CyPw",
-  authDomain: "my-knowledge-f7b06.firebaseapp.com",
-  projectId: "my-knowledge-f7b06",
-  storageBucket: "my-knowledge-f7b06.appspot.com",
-  messagingSenderId: "139448644860",
-  appId: "1:139448644860:web:15d2f00049f43e3c431379",
+  apiKey: REACT_APP_apiKey,
+  authDomain: REACT_APP_authDomain,
+  projectId: REACT_APP_projectId,
+  storageBucket: REACT_APP_storageBucket,
+  messagingSenderId: REACT_APP_messagingSenderId,
+  appId: REACT_APP_appId,
 };
 
 // initialize the app
