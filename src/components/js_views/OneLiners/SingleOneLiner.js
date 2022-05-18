@@ -1,4 +1,5 @@
 import React from "react";
+import CodeBlock from "../../../generalComponents/codeBlock/CodeBlock";
 
 export default function SingleOneLiner({ data }) {
   return (
@@ -9,7 +10,9 @@ export default function SingleOneLiner({ data }) {
       <div className='oneLine_description'>
         <p>{data.Explanation}</p>
       </div>
-      <div className='oneLine_code_box'>{data.Code}</div>
+      <div className='oneLine_code_box'>
+        <CodeBlock code={data.Code} leng={"javascript"} />
+      </div>
     </li>
   );
 }

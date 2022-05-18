@@ -1,0 +1,56 @@
+.envPage_main_container {
+  width: 80%;
+  margin: 0 auto;
+}
+.envPage_section_header {
+  text-align: start;
+  font-size: 1.7em;
+  padding: 2.5em 1em 1.5em;
+}
+.envPage_main_container p,
+.envPage_main_container li p {
+  padding: 1em;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+}
+.envPage_span {
+  color: red;
+}
+.envPage_second_section_body {
+  width: 100%;
+}
+.envPage_code_li,
+.envPage_code_p {
+  background-color: rgb(58, 57, 57);
+  width: 100%;
+}
+.envPage_code_li code,
+.envPage_third_section code {
+  white-space: break-spaces;
+  color: whitesmoke;
+}
+@media only screen and (max-width: 600px) {
+  .envPage_section_header {
+    text-align: center;
+    font-size: 1.5em;
+    padding: 2.5em 1em 1.5em;
+  }
+  .envPage_main_container p,
+  .envPage_main_container li p {
+    padding: 1em;
+    font-size: 1em;
+  }
+  .envPage_second_section_body {
+    width: 100%;
+  }
+  .envPage_code_li,
+  .envPage_code_p {
+    background-color: rgb(58, 57, 57);
+    width: 100%;
+  }
+  .envPage_code_li code,
+  .envPage_third_section code {
+    white-space: break-spaces;
+    color: whitesmoke;
+  }
+}

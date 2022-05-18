@@ -1,4 +1,5 @@
 import React from "react";
+import CodeBlock from "../../../generalComponents/codeBlock/CodeBlock";
 
 function SingleSqlGeneral({ item }) {
   return (
@@ -12,7 +13,9 @@ function SingleSqlGeneral({ item }) {
             <div className='oneLine_description'>
               <p>{item.codedescription}</p>
             </div>
-            <div className='oneLine_code_box'>{item.code}</div>
+            <div className='oneLine_code_box'>
+              <CodeBlock code={item.code} leng={"sql"} />
+            </div>
           </div>
         );
       })}

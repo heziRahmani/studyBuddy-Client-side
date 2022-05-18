@@ -17,6 +17,10 @@ import About from "./components/about/About";
 import SqlDashboard from "./components/sql_views/sqlDashboard/SqlDashboard";
 import SqlGeneral from "./components/sql_views/sqlGeneral/SqlGeneral";
 import ToDo from "./components/admin_views/toDo/ToDo";
+import ReactGeneral from "./components/react_views/reactGeneral/ReactGeneral";
+import EnvironmentVariables from "./components/react_views/reactGeneral/environmentVariables/EnvironmentVariables";
+import ReactDashboard from "./components/react_views/reactDashboard/ReactDashboard";
+import ReactAxios from "./components/react_views/reactGeneral/reactAxios/ReactAxios";
 
 //js imports
 const JsMain = lazy(() => import("./components/js_views/js_main_page/JsMain"));
@@ -67,6 +71,11 @@ function App() {
               {/* html view routs */}
               <Route path={"/html"} element={<HtmlDashboard />}>
                 <Route path='tags' element={<HtmlTags />} />
+              </Route>
+              {/* react view routs */}
+              <Route path={"/react"} element={<ReactDashboard />}>
+                <Route path='env' element={<EnvironmentVariables />} />
+                <Route path='axios' element={<ReactAxios />} />
               </Route>
             </Routes>
           </BrowserRouter>

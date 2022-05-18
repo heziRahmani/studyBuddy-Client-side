@@ -1,4 +1,5 @@
 import React from "react";
+import CodeBlock from "../../../generalComponents/codeBlock/CodeBlock";
 
 export default function SingleArreyData({ item }) {
   return (
@@ -16,7 +17,7 @@ export default function SingleArreyData({ item }) {
                 {item.functions > 0 ? (
                   item.functions.map((item) => <p>{item}</p>)
                 ) : (
-                  <p>{item.functions}</p>
+                  <CodeBlock code={item.functions} leng={"javascript"} />
                 )}
               </pre>
               <p className='outputHeader'>Output</p>

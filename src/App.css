@@ -1,13 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;600&family=Source+Code+Pro:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;600&family=Roboto:wght@400;700&family=Source+Code+Pro:wght@400;600&display=swap");
 *,
 ::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: var(--font-sub-header-Poppins);
+  font-family: var(--font-family_Roboto);
   text-decoration: none;
 }
+
 body {
   /* overflow: hidden; */
   background-color: rgb(215, 214, 218);
@@ -207,6 +208,8 @@ ul li {
   --font-headerFont-Libre_Baskerville: "Libre Baskerville", serif;
   --font-sub-header-Poppins: "Poppins", sans-serif;
   --font-Source_Code_Pro: "Source Code Pro", monospace;
+
+  --font-family_Roboto: "Roboto", sans-serif;
 
   /* whidth */
   --pc-width: 75%;
