@@ -1,5 +1,6 @@
 import { query } from "firebase/firestore";
-import React, { lazy } from "react";
+import React, { lazy, Suspense } from "react";
+import Loader from "react-loaders";
 
 import { collhtmlTagsRef } from "../../../utilities/fireBase_connection/FireBaseConnection";
 import { useCollection } from "../../../utilities/hooks/useCollection";
@@ -12,7 +13,7 @@ export default function HtmlTags() {
   let { data } = useCollection(q2);
 
   return (
-    <>
+    <Suspense fallback={<Loader type='pacman' />}>
       <div id='htmlTags_container' className='htmlTags_container'>
         <div id='htmlTags_header' className='htmlTags_header'>
           <h2>HTML TAGS</h2>
@@ -25,6 +26,6 @@ export default function HtmlTags() {
           ))}
         </div>
       </div>
-    </>
+    </Suspense>
   );
 }

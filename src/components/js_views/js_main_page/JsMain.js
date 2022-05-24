@@ -3,6 +3,7 @@ import React, { lazy, Suspense } from "react";
 import "./jsMain.css";
 
 import { Outlet } from "react-router";
+import Loader from "react-loaders";
 
 const SideBar = lazy(() =>
   import("../../../generalComponents/sideBar/SideBar")
@@ -10,7 +11,7 @@ const SideBar = lazy(() =>
 
 export default function JsMain() {
   return (
-    <Suspense fallback={<div>loading...</div>}>
+    <Suspense fallback={<Loader type='pacman' />}>
       <div
         id='JsMain_container'
         className='jsDashboard_container overflowHidden'>

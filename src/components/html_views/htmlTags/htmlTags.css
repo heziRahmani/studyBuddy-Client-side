@@ -34,6 +34,7 @@
 .tagMainBox {
   overflow: hidden;
   margin: 1em 0;
+  letter-spacing: 1px;
 }
 .tagBox {
   display: flex;
@@ -53,11 +54,13 @@
     rgba(255, 255, 255, 0.5) 19%,
     rgba(255, 255, 255, 0) 21%
   );
+  font-size: 1.1em;
 }
-.header {
+.tagBox .header {
   min-width: 16%;
   color: black;
   font-weight: 600;
+  font-size: 1.3em;
 }
 .attribute_box {
   display: flex;

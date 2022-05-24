@@ -64,7 +64,7 @@ export const SideBarData = [
   {
     titel: "REACT",
     icon: <FaReact />,
-    link: "/react",
+    link: "/react/env",
     subLinks: [
       { titel: "Env", icon: <IoMdStarHalf />, link: "/react/env" },
       { titel: "Axios", icon: <IoMdStarHalf />, link: "/react/axios" },

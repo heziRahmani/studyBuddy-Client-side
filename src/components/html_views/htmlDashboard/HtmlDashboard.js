@@ -1,4 +1,5 @@
 import React, { lazy, Suspense } from "react";
+import Loader from "react-loaders";
 import { Outlet } from "react-router";
 import "./htmlDashboard.css";
 // component imports
@@ -7,7 +8,7 @@ const SideBar = lazy(() =>
 );
 export default function HtmlDashboard() {
   return (
-    <Suspense fallback={<div>loading...</div>}>
+    <Suspense fallback={<Loader type='pacman' />}>
       <div className='htmlDashboardMainContainer '>
         <SideBar />
         <div className='htmlMainBox '>

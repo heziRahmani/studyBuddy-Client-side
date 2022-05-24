@@ -1,4 +1,5 @@
 import React, { lazy, Suspense, useEffect, useState } from "react";
+import Loader from "react-loaders";
 import { Outlet, useNavigate } from "react-router";
 import { useCheckAuth } from "../../../utilities/hooks/useCheckAuth";
 import "./adminMainPage.css";
@@ -23,7 +24,7 @@ export default function AdminMainPage() {
   }, [currentUrl]);
 
   return (
-    <Suspense fallback={<div>loading...</div>}>
+    <Suspense fallback={<Loader type='pacman' />}>
       <div id='adminMain_container' className='adminMain_container'>
         <SideBar />
         <div id='adminMain_budy' className='adminMain_body'>

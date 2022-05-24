@@ -6,10 +6,11 @@ import { DiGithubAlt, DiGithubFull } from "react-icons/di";
 
 import { FaReact } from "react-icons/fa";
 import "./about.css";
+import Loader from "react-loaders";
 const SideBar = lazy(() => import("../../generalComponents/sideBar/SideBar"));
 function About() {
   return (
-    <Suspense fallback={<div>loading...</div>}>
+    <Suspense fallback={<Loader type='pacman' />}>
       <div className='mainAbout_container '>
         <SideBar />
 

@@ -1,9 +1,6 @@
 import React, { lazy, Suspense, useEffect, useState, useContext } from "react";
 import { useNavigate } from "react-router";
 
-// const SideBar = lazy(() => import("../sideBar/SideBarData"));
-//customs hooks imports
-// import useDeleteDoc from "../../../utilities/hooks/useDeleteDoc";
 import { useCollection } from "../../../utilities/hooks/useCollection";
 // fireBase imports
 import { orderBy, query } from "firebase/firestore";
@@ -13,6 +10,7 @@ import StyleCard from "../adminDashboardCards/StyleCard";
 import BackEndCard from "../adminDashboardCards/BackEndCard";
 import AddToTheSite from "../adminDashboardCards/AddToTheSiteCard";
 import BugsCard from "../adminDashboardCards/BugsCard";
+import Loader from "react-loaders";
 
 export default function AdminDashboard() {
   // const [id, setId] = useState(null);
@@ -54,15 +52,9 @@ export default function AdminDashboard() {
     console.log(data);
     console.log(styleCard);
   }, [data]);
-  //hendelers
-  //delete doc
-  // function deleteHendeler(_id) {
-  //   setId(_id);
-  // }
-  // useDeleteDoc("toDo", id);
 
   return (
-    <Suspense fallback={<div>loading...</div>}>
+    <Suspense fallback={<Loader type='pacman' />}>
       <section className='adminDashboard_container overflowHidden'>
         <header className='adminDashboard_header'>
           <h3>Admin Dashbord</h3>
