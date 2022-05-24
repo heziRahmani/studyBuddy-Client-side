@@ -1,39 +1,78 @@
+
 # Study Buddy
-My Information Hub.
 
-## Technologies
-Client Side:
+Simple app to help me organize all the data and resources that I accumulated in word files since I started to code.
 
-### 1.React
- 
- >Custom Hooks
- 
- >Router
- 
- >React Context
+## Tech Stack
 
-### 2.Css
+**Client:** React, custom hooks,react router,context
+
+**Server:** Firebase
+
+
+## Run Locally
+
+Clone the project
+
+```bash
+  git clone https://link-to-project
+```
+
+Go to the project directory
+
+```bash
+  cd my-project
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+configur the .env file
+
+```bash
+  in the .env file put your firebase credentials.
+  NOTE: You can find A list of the .env variables in the Environment Variables section below
+```
+
+Start the server
+
+```bash
+  npm run start
+```
+
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file,
+you can get the Environment Variables values from your firebase firestore credentials
+
+  'REACT_APP_apiKey'= "String"
+
+  'REACT_APP_authDomain' ="String"
+
+  'REACT_APP_projectId' ="String"
+
+  'REACT_APP_storageBucket' ="String"
+
+  'REACT_APP_messagingSenderId' ="String"
+
+  'REACT_APP_appId' ="String"
+
+
+  NOTE: you can find the database configuration below
+
+
   
-  >pure css
-  
-  >icons: react-icons
-  
-Server Side: 
-
->FifeBase => Back End es a service
-
-
-images or video
-
-## Installation
-Steps:
-*If you have a fire store account go to step 2
-1.	Create a fireStore account and a database. link for a guide: https://www.youtube.com/watch?v=9zdvmgGsww0&list=PL4cUxeGkcC9jERUGvbudErNCeSZHWUVlb
-2.	Create a .env file for the fireStore credentials
 
 
 
-##dataBase structure
+
+## Database Structure
+
+
+
 
 | Name of the collection | fields | Data type |
 | :---: | :---: | :---: | 
@@ -68,18 +107,8 @@ Steps:
 
 *All the Arrey are <string>
 
-## Usage example
-## Release History
-## Available Scripts
-In the project directory, you can run:
-### npm start
-Runs the app in the development mode.
-Open http://localhost:3000 to view it in your browser. The page will reload when you make changes.
-You may also see any lint errors in the console.
-### npm run build
-Builds the app for production to the build folder.
-It correctly bundles React in production mode and optimizes the build for the best performance.
-## Meta
+
+## Roadmap
 
 
-
+- Add links section
