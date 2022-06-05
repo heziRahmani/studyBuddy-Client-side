@@ -1,0 +1,187 @@
+$letters: (
+  s: fadeInBottomRight,
+  t: fadeInTopLeft,
+  u1: zoomInRight,
+  d1: fadeInBottomLeft,
+
+  b: fadeInTopRight,
+  u2: zoomInLeft,
+  d2: fadeInDownBig,
+  d3: fadeInRightBig,
+);
+
+.landingPage_sectionOne_container {
+  background-image: radial-gradient(
+      circle at center center,
+      transparent,
+      rgb(33, 33, 33)
+    ),
+    repeating-linear-gradient(
+      135deg,
+      rgb(33, 33, 33) 0px,
+      rgb(33, 33, 33) 2px,
+      transparent 2px,
+      transparent 10px,
+      rgb(33, 33, 33) 10px,
+      rgb(33, 33, 33) 11px,
+      transparent 11px,
+      transparent 21px
+    ),
+    repeating-linear-gradient(
+      45deg,
+      rgb(47, 47, 47) 0px,
+      rgb(47, 47, 47) 4px,
+      transparent 4px,
+      transparent 8px
+    ),
+    linear-gradient(90deg, rgb(33, 33, 33), rgb(33, 33, 33));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  height: 100vh;
+  /* btn */
+  .landingPage_btn_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    button {
+      transform: translateX(-20%);
+      width: 150px;
+      height: 50px;
+      animation: fadeIn 3.5s;
+      cursor: pointer;
+      border: none;
+      font-family: "Comfortaa", cursive;
+      color: rgba(255, 255, 255, 0.5);
+      font-size: 20px;
+      border-radius: 4px;
+      box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 0.5),
+        0px 0px 10px rgba(0, 0, 0, 0.15);
+      background: rgb(2, 0, 36);
+      background: linear-gradient(
+        45deg,
+        rgba(2, 0, 36, 0) 5%,
+        rgba(255, 255, 255, 0.5) 6%,
+        rgba(255, 255, 255, 0) 9%,
+        rgba(255, 255, 255, 0.5) 10%,
+        rgba(255, 255, 255, 0) 17%,
+        rgba(255, 255, 255, 0.5) 19%,
+        rgba(255, 255, 255, 0) 21%
+      );
+      background-size: 150%;
+      background-position: right;
+      transition: 1s;
+      z-index: 10000;
+      :hover {
+        background-position: left;
+        color: white;
+        box-shadow: inset 0px 3px 5px rgba(255, 255, 255, 1),
+          0px 0px 10px rgba(0, 0, 0, 0.25);
+      }
+      :focus {
+        outline: none;
+        color: #2f4050;
+      }
+    }
+    a {
+      outline: none;
+      color: #2f4050;
+      :active {
+        outline: none;
+        color: #2f4050;
+      }
+    }
+  }
+  /*header */
+  .lendingPage_header_box {
+    display: flex;
+
+    padding: 10%;
+  }
+  H3 {
+    font-size: 10em;
+    display: flex;
+    line-height: 0.9em;
+
+    text-shadow: 0px 3px 24px goldenrod;
+    color: #000;
+    mix-blend-mode: difference;
+    span {
+      display: block;
+    }
+    .header_span_s {
+      text-shadow: 0px 3px 24px goldenrod;
+      color: #000;
+    }
+    .header_span_y {
+      text-shadow: 0px 10px 0px goldenrod;
+      color: #8589a5;
+      animation: flipInX 3.5s;
+    }
+    @each $letter, $animetion in $letters {
+      .header_span_#{$letter} {
+        animation: $animetion 1.5s;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .landingPage_btn_box {
+    .landingPage_btn_box button {
+      width: 150px;
+      height: 50px;
+      font-size: 1.5em;
+      transform: translateX(-20%);
+    }
+  }
+}
+/* tablet version */
+@media screen and (max-width: 700px) {
+  .landingPage_sectionOne_container {
+    .landingPage_btn_box {
+      button {
+        width: 130px;
+        height: 50px;
+        font-size: 1em;
+        transform: translateX(-20%);
+      }
+    }
+    .lendingPage_header_box {
+      H3 {
+        font-size: 10em;
+      }
+    }
+  }
+}
+/* cell phone version */
+@media screen and (max-width: 550px) {
+  .landingPage_sectionOne_container {
+    .landingPage_btn_box {
+      button {
+        width: 120px;
+        height: 50px;
+        font-size: 1em;
+        transform: translateX(-20%);
+      }
+    }
+    .lendingPage_header_box {
+      H3 {
+        font-size: 5em;
+      }
+    }
+  }
+}

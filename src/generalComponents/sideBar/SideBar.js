@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import "./sideBar.css";
+import "./sideBar.scss";
 import { SideBarData } from "./SideBarData";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function SideBar() {
   const [svg, setSvg] = useState(null);
@@ -75,30 +75,37 @@ export default function SideBar() {
 
         {/* css sideBar Body */}
         <div id='sideBar_body' className='sideBar_body'>
-          <ul>
+          <ul className='main_ul'>
             {SideBarData.map((val, key) => {
               return (
-                <li
-                  key={key}
-                  id={window.location.pathname == val.link ? "active" : ""}
-                  className='sideBar_li'>
-                  <Link to={val.link} className='sideBarLink'>
+                <li key={key} className='sideBar_li'>
+                  <NavLink
+                    id={window.location.pathname == val.link ? "active" : ""}
+                    to={val.link}
+                    className='sideBarLink'>
                     <div className='iconBox'>{val.icon}</div>
                     <div className='liSpan'>
                       <span>{val.titel}</span>
                     </div>
-                  </Link>
+                  </NavLink>
 
                   <ul className='subLinks'>
                     {val.subLinks.map((item, key) => {
                       return (
                         <li key={key}>
-                          <Link to={item.link} className='subListSideBarLink'>
+                          <NavLink
+                            to={item.link}
+                            // className='subListSideBarLink'
+                            className={({ isActive }) =>
+                              isActive
+                                ? "subListSideBarLink active"
+                                : "subListSideBarLink"
+                            }>
                             <div className='subLincIconBox'>{item.icon}</div>
                             <div className='subListLiSpan'>
                               <span>{item.titel}</span>
                             </div>
-                          </Link>
+                          </NavLink>
                         </li>
                       );
                     })}

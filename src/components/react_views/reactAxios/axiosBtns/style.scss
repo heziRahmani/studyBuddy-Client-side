@@ -1,0 +1,70 @@
+$colors: (
+  "Green": #97bc62ff,
+  "RoyalBlue": #00539cff,
+  "RoyalPurple": #603f83ff,
+  "CherryTomato": #e94b3cff,
+  "MangoMojito": #daa03dff,
+  "SpaceCherry": #990011ff,
+  "RosePink": #df6589ff,
+  "Teal": #4b878bff,
+  "Navy": #28334aff,
+);
+
+@each $key, $val in $colors {
+  .btn_#{$key} {
+    text-decoration: none;
+    display: inline-block;
+    border: 0;
+    padding: 0.8em 1.5em;
+    border-radius: 5px;
+    background-color: #{$val};
+    color: whitesmoke;
+  }
+}
+
+.axiosExemples_container {
+  width: 100%;
+  margin: 0 auto;
+  line-height: 1.5em;
+  header {
+    text-align: center;
+    font-size: 2em;
+    margin: 3em;
+  }
+  section {
+    overflow-wrap: break-word;
+  }
+  .btn_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em;
+    margin-top: 3em;
+    padding: 2em 1em;
+    .btn_box {
+    }
+  }
+  .res_output_section {
+    .res_box_header {
+      border: 1px solid black;
+
+      background-color: lightgoldenrodyellow;
+      font-size: 1.1em;
+      text-transform: capitalize;
+      h3 {
+        padding: 0.2em;
+      }
+      h4 {
+        padding: 0.5em;
+      }
+    }
+  }
+  .res_box_code {
+    min-height: 7em;
+    pre {
+      overflow-wrap: break-word;
+      white-space: break-spaces;
+    }
+  }
+}

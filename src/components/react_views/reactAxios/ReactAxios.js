@@ -1,9 +1,8 @@
 import React, { lazy, Suspense } from "react";
 import Loader from "react-loaders";
+import CodeBlock from "../../../generalComponents/codeBlock/CodeBlock";
+import AxiosExemples from "./AxiosExemples";
 import "./reactAxios.css";
-const CodeBlock = lazy(() =>
-  import("../../../../generalComponents/codeBlock/CodeBlock")
-);
 
 function ReactAxios() {
   return (
@@ -12,6 +11,7 @@ function ReactAxios() {
         <div className='axios_header_box'>
           <h3>ReactAxios</h3>
         </div>
+        <AxiosExemples />
         <div className='axios_section_box'>
           <div className='axios_section_header'>
             <h4>
@@ -178,7 +178,7 @@ function ReactAxios() {
                 like this:
               </p>
               <div>
-                <div axios_section_box>
+                <div className='axios_section_box'>
                   <div className='header'>
                     <h4>Async/Await GET</h4>
                   </div>
@@ -191,7 +191,7 @@ function ReactAxios() {
                     />
                   </div>
                 </div>
-                <div axios_section_box>
+                <div className='axios_section_box'>
                   <div className='header'>
                     <h4>Async/Await Post</h4>
                   </div>
@@ -204,7 +204,7 @@ function ReactAxios() {
                     />
                   </div>
                 </div>
-                <div axios_section_box>
+                <div className='axios_section_box'>
                   <div className='header'>
                     <h4>Async/Await DELETE</h4>
                   </div>

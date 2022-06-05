@@ -8,8 +8,12 @@ import "./htmlTags.css";
 const SingleHtmlTag = lazy(() => import("./singleHtmlTag"));
 
 export default function HtmlTags() {
+  /**
+   * gets data from fireBase
+   * q2 =>gets query(fireBase hook) with a firebase collection refernce
+   * useCollection custom hook gets the q2(query) and return arrey with the data
+   */
   const q2 = query(collhtmlTagsRef);
-
   let { data } = useCollection(q2);
 
   return (
@@ -20,7 +24,7 @@ export default function HtmlTags() {
         </div>
         <div
           id='htmlTags_singleTag_container'
-          className='htmlTags_singleTag_container'>
+          className='htmlTags_singleTag_container show_card'>
           {data.map((item, i) => (
             <SingleHtmlTag tagData={item} key={i} />
           ))}

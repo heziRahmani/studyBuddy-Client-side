@@ -1,5 +1,5 @@
 import { lazy, Suspense, useState } from "react";
-import "./App.css";
+import "./App.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Regex from "./components/js_views/regex/Regex";
 import OneLiners from "./components/js_views/OneLiners/OneLiners";
@@ -8,7 +8,7 @@ import HtmlDashboard from "./components/html_views/htmlDashboard/HtmlDashboard";
 import AdminDashboard from "./components/admin_views/adminDashboard/AdminDashboard.";
 import SignInForm from "./components/admin_views/auth/SignInForm";
 import AdminMainPage from "./components/admin_views/adminMainPage/AdminMainPage";
-// import ToDo from "./components/toDo/ToDo";
+
 import { UpdateFormContext_provider } from "./utilities/context/updateFormContext";
 import LandingPage from "./components/landingPage/LandingPage";
 import ButtonsUi from "./components/css_views/buttons/Buttons";
@@ -18,9 +18,9 @@ import SqlDashboard from "./components/sql_views/sqlDashboard/SqlDashboard";
 import SqlGeneral from "./components/sql_views/sqlGeneral/SqlGeneral";
 import ToDo from "./components/admin_views/toDo/ToDo";
 import ReactGeneral from "./components/react_views/reactGeneral/ReactGeneral";
-import EnvironmentVariables from "./components/react_views/reactGeneral/environmentVariables/EnvironmentVariables";
+import EnvironmentVariables from "./components/react_views/environmentVariables/EnvironmentVariables";
 import ReactDashboard from "./components/react_views/reactDashboard/ReactDashboard";
-import ReactAxios from "./components/react_views/reactGeneral/reactAxios/ReactAxios";
+import ReactAxios from "./components/react_views/reactAxios/ReactAxios";
 
 //js imports
 const JsMain = lazy(() => import("./components/js_views/js_main_page/JsMain"));

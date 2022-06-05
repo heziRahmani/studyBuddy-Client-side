@@ -29,7 +29,7 @@ export const useSearch = (collRef, fieldName, operetor, searchingFor) => {
       snapshot.forEach((doc) => {
         _arreyData.push({ ...doc.data(), id: doc.id });
       });
-      console.log(_arreyData);
+      // console.log(_arreyData);
       setSearchData(_arreyData);
     });
   };

@@ -54,7 +54,11 @@ export const SideBarData = [
     icon: <FaJs />,
     link: "/js/arreyMethod",
     subLinks: [
-      { titel: "arreyMethod", icon: <IoMdStarHalf />, link: "/js/arreyMethod" },
+      {
+        titel: "arrey Method",
+        icon: <IoMdStarHalf />,
+        link: "/js/arreyMethod",
+      },
       { titel: "Regex", icon: <IoMdStarHalf />, link: "/js/Regex" },
       { titel: "One Liners", icon: <IoMdStarHalf />, link: "/js/OneLiners" },
     ],

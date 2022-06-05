@@ -5,8 +5,9 @@ import { IoLogoFirebase } from "react-icons/io5";
 import { DiGithubAlt, DiGithubFull } from "react-icons/di";
 
 import { FaReact } from "react-icons/fa";
-import "./about.css";
+import "./about.scss";
 import Loader from "react-loaders";
+
 const SideBar = lazy(() => import("../../generalComponents/sideBar/SideBar"));
 function About() {
   return (
