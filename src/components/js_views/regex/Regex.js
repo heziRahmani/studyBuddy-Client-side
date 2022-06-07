@@ -3,7 +3,8 @@ import { query } from "firebase/firestore";
 import { collRegexRef } from "../../../utilities/fireBase_connection/FireBaseConnection";
 import { useCollection } from "../../../utilities/hooks/useCollection";
 //style import
-import "./regex.css";
+import "./regex.scss";
+import RegexData from "./RegexData";
 export default function Regex() {
   const q = query(collRegexRef);
   let { data } = useCollection(q);
@@ -22,14 +23,14 @@ export default function Regex() {
     console.log("effct");
   }, []);
   return (
-    <>
+    <div className='regex_main_container'>
       <div id='regexHeader_container' className='regexHeader_container'>
-        <h2>RegexCheatSheet</h2>
+        <h2>Regex</h2>
       </div>
       <div id='regexBody_container' className='regexBody_container'>
         {/* 1 characterClasses*/}
         <div id='regex_box' className='regex_box'>
-          <div>
+          <div className='regex_box_header'>
             <h3 title='Character Classes'>Character Classes</h3>{" "}
           </div>
           {characterClasses.map((item, key) => {
@@ -48,7 +49,7 @@ export default function Regex() {
         </div>
         {/* 2 anchors*/}
         <div id='regex_box' className='regex_box'>
-          <div>
+          <div className='regex_box_header'>
             <h3 title='Character Classes'>anchors</h3>{" "}
           </div>
           {anchors.map((item, key) => {
@@ -66,7 +67,7 @@ export default function Regex() {
         </div>
         {/* 3 flags*/}
         <div id='regex_box' className='regex_box'>
-          <div>
+          <div className='regex_box_header'>
             <h3 title='Character Classes'>flags</h3>{" "}
           </div>
           {flags.map((item, key) => {
@@ -84,7 +85,7 @@ export default function Regex() {
         </div>
         {/* 4 quantifiers*/}
         <div id='regex_box' className='regex_box'>
-          <div>
+          <div className='regex_box_header'>
             <h3 title='Character Classes'>quantifiers</h3>{" "}
           </div>
           {quantifiers.map((item, key) => {
@@ -102,7 +103,7 @@ export default function Regex() {
         </div>
         {/* 5 groupAndRanges*/}
         <div id='regex_box' className='regex_box'>
-          <div>
+          <div className='regex_box_header'>
             <h3 title='Character Classes'>groupAndRanges</h3>{" "}
           </div>
           {groupAndRanges.map((item, key) => {
@@ -119,6 +120,9 @@ export default function Regex() {
           })}
         </div>
       </div>
-    </>
+      <section className='regexData_section'>
+        <RegexData />
+      </section>
+    </div>
   );
 }

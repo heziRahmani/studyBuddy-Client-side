@@ -1,6 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;600&family=Roboto:wght@400;700&family=Source+Code+Pro:wght@400;600&display=swap");
 @import "animate.css";
 // @import "~loaders.css/src/animations/pacman.scss";
+//general sass settings
+// colors
+$color_maroon: #881b4c;
+$color_indigo: #1e2761;
+$color_indigo_ligther: #303972;
+/* font sizes */
+$headLine_font_size: 4rem;
+$sub-headLine_font_size: 2em;
+$body_font_size: 1.3em;
+
+$sideBar_font_size: 1.5em;
+/* font color */
+$primery_font: #000000ff;
+$secondery_font: black;
+/* font familys */
+$font-extra_font-BebasNeue: "Bebas Neue", cursive;
+$font-headerFont-Libre_Baskerville: "Libre Baskerville", serif;
+$font-sub-header-Poppins: "Poppins", sans-serif;
+$font-Source_Code_Pro: "Source Code Pro", monospace;
+
+$font-family_Roboto: "Roboto", sans-serif;
+
+// general css setting
 *,
 ::after,
 *::before {
@@ -20,11 +43,7 @@ ul li {
   list-style: none;
   list-style-type: none;
 }
-.hiddeScroll {
-  overflow: hidden !important;
 
-  max-height: 100vh;
-}
 :root {
   --ligth-readient-two-colors: linear-gradient(
       135deg,
@@ -177,13 +196,12 @@ ul li {
       rgba(91, 91, 91, 0.04) 100%
     ),
     linear-gradient(90deg, rgb(10, 17, 72), rgb(35, 148, 228));
-  /* landingPage Colors */
-  /*graph colors*/
+  /*  Colors */
+
   --color_Purple: #93385fff;
   --color_Raspberry: #8a307f;
   --color_Raspberry_secondery: #6b2963;
   --color_maroon: #881b4c;
-  /*sideBar colors*/
   --color_indigo: #1e2761;
   --color_indigo_ligther: #303972;
   --color_indigo_darker: #121630;
@@ -191,9 +209,8 @@ ul li {
   --color-Ultimate-Gray: #949398ff;
   --color-white: #ffffffff;
   --color_ligte_green: #22c1c3;
-  /* to-do colors */
   --color_Living_Coral: #fc766aff;
-  --buttom_border_color: "";
+
   /* font sizes */
   --headLine_font_size: 4rem;
   --sub-headLine_font_size: 2em;
@@ -235,6 +252,11 @@ ul li {
     "sideBar body body body body body body body body rightSide";
 }
 /* scroll bar style */
+.hiddeScroll {
+  overflow: hidden !important;
+
+  max-height: 100vh;
+}
 /* width */
 ::-webkit-scrollbar {
   width: 20px;
