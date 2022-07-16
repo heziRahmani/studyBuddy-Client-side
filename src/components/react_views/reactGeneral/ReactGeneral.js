@@ -10,9 +10,7 @@ function ReactGeneral() {
       <Suspense fallback={<Loader type='pacman' />}>
         <div className='reactGeneralMainContainer '>
           <SideBar />
-          <div className='reactGeneralMainBox '>
-            <Outlet />
-          </div>
+          <div className='reactGeneralMainBox '>{/* <Outlet /> */}</div>
         </div>
       </Suspense>
     </div>

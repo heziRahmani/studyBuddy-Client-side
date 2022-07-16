@@ -4,7 +4,7 @@ import Loader from "react-loaders";
 
 import { collhtmlTagsRef } from "../../../utilities/fireBase_connection/FireBaseConnection";
 import { useCollection } from "../../../utilities/hooks/useCollection";
-import "./htmlTags.css";
+import "./htmlTags.scss";
 const SingleHtmlTag = lazy(() => import("./singleHtmlTag"));
 
 export default function HtmlTags() {
@@ -20,7 +20,9 @@ export default function HtmlTags() {
     <Suspense fallback={<Loader type='pacman' />}>
       <div id='htmlTags_container' className='htmlTags_container'>
         <div id='htmlTags_header' className='htmlTags_header'>
-          <h2>HTML TAGS</h2>
+          <h2>
+            HTML <span>TAGS</span>
+          </h2>
         </div>
         <div
           id='htmlTags_singleTag_container'

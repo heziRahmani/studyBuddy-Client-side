@@ -1,11 +1,14 @@
+@import "../../../App.scss";
 .envPage_main_container {
-  width: 80%;
-  margin: 0 auto;
-}
-.envPage_section_header {
-  text-align: start;
-  font-size: 1.7em;
-  padding: 2.5em 1em 1.5em;
+  @include GeneralContainerStyle;
+  .header_container {
+    @include GeneralHeaderStyle;
+  }
+  .envPage_section_header {
+    text-align: start;
+    font-size: 1.7em;
+    padding: 2.5em 1em 1.5em;
+  }
 }
 .envPage_main_container p,
 .envPage_main_container li p {

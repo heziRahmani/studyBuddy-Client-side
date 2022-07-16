@@ -57,7 +57,7 @@ $letters: (
     -ms-user-select: none;
     user-select: none;
     -webkit-tap-highlight-color: transparent;
-    button {
+    .btn_link {
       transform: translateX(-20%);
       width: 150px;
       height: 50px;
@@ -85,6 +85,8 @@ $letters: (
       background-position: right;
       transition: 1s;
       z-index: 10000;
+      display: grid;
+      place-items: center;
       :hover {
         background-position: left;
         color: white;

@@ -1,0 +1,45 @@
+@mixin GeneralContainerStyle {
+  padding: 1em;
+  width: 75%;
+  margin: 0 auto;
+  text-transform: capitalize;
+}
+
+@mixin GeneralHeaderStyle {
+  text-align: start;
+  font-size: 2em;
+  color: #1f1313;
+  /* text-shadow: 4px 3px 0 #a2a9d7; */
+  padding: 2em 1.4em 2em 0em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  position: relative;
+  text-transform: uppercase;
+
+  h2 {
+    letter-spacing: 4px;
+    font-family: $font-family-Libre_Baskerville;
+
+    span {
+      position: relative;
+      font-family: $font-family-Libre_Baskerville;
+      // font-family: $font-family-BebasNeue;
+      // font-family: $font-family-Roboto;
+      // font-family: $font-family-Source_Code_Pro;
+      // font-family: $font-family--Poppins;
+
+      &::after {
+        position: absolute;
+        content: "";
+        height: 80px;
+        width: 65px;
+        background-color: #435e55ff;
+        opacity: 0.5;
+        right: -1px;
+        top: -15px;
+      }
+    }
+  }
+}

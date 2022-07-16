@@ -1,11 +1,16 @@
 import React, { Suspense } from "react";
 import Loader from "react-loaders";
-import "./environmentVariables.css";
+import "./environmentVariables.scss";
 function EnvironmentVariables() {
   return (
     <Suspense fallback={<Loader type='pacman' />}>
       <div className='envPage_main_container'>
-        <div className='envPage_section_header'>
+        <heder className='header_container'>
+          <h2>
+            environment variab<span>les</span>
+          </h2>
+        </heder>
+        <div className='envPage_section_subHeader'>
           <h3>What are environment variables?</h3>
         </div>
         <div className='envPage_first_section_body'>

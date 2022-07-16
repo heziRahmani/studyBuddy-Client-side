@@ -1,5 +1,6 @@
 //var imports
 @use "../../../App.scss";
+@import "../../../App.scss";
 
 .regex_main_container {
   margin: 0 auto;
@@ -9,10 +10,7 @@
   line-height: 20px;
   letter-spacing: 2px;
   .regexHeader_container {
-    display: grid;
-    place-items: center;
-    width: 100%;
-    height: 5em;
+    @include GeneralHeaderStyle;
   }
   .regexBody_container {
     display: flex;
@@ -61,8 +59,8 @@
           }
         }
       }
-      .regxData_explantion {
-      }
+      // .regxData_explantion {
+      // }
     }
   }
 }

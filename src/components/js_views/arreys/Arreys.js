@@ -1,6 +1,6 @@
 import React, { lazy, useState, Suspense } from "react";
 
-import "./arreyAndObjects.css";
+import "./arreyAndObjects.scss";
 import { query } from "firebase/firestore";
 import { collArreyRef } from "../../../utilities/fireBase_connection/FireBaseConnection";
 import { useCollection } from "../../../utilities/hooks/useCollection";
@@ -40,13 +40,14 @@ export default function Arreys() {
         <div>
           {data
             .filter((val) => {
-              if (searchInput == "") {
+              if (searchInput === "") {
                 return val;
               } else if (
                 val.name.toLowerCase().includes(searchInput.toLowerCase())
               ) {
                 return val;
               }
+              return val;
             })
             .map((item, i) => (
               <SingleArreyData item={item} key={i} />

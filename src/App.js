@@ -21,6 +21,7 @@ import ReactGeneral from "./components/react_views/reactGeneral/ReactGeneral";
 import EnvironmentVariables from "./components/react_views/environmentVariables/EnvironmentVariables";
 import ReactDashboard from "./components/react_views/reactDashboard/ReactDashboard";
 import ReactAxios from "./components/react_views/reactAxios/ReactAxios";
+import Promise from "./components/react_views/promise/Promise";
 
 //js imports
 const JsMain = lazy(() => import("./components/js_views/js_main_page/JsMain"));
@@ -31,8 +32,6 @@ const CssDividers = lazy(() =>
 );
 //html imports
 function App() {
-  const [state, setstate] = useState(null);
-
   return (
     <Suspense fallback={<div>loading...</div>}>
       <div className='App'>
@@ -76,6 +75,7 @@ function App() {
               <Route path={"/react"} element={<ReactDashboard />}>
                 <Route path='env' element={<EnvironmentVariables />} />
                 <Route path='axios' element={<ReactAxios />} />
+                <Route path='promise' element={<Promise />} />
               </Route>
             </Routes>
           </BrowserRouter>

@@ -2,14 +2,16 @@ import React, { lazy, Suspense } from "react";
 import Loader from "react-loaders";
 import CodeBlock from "../../../generalComponents/codeBlock/CodeBlock";
 import AxiosExemples from "./AxiosExemples";
-import "./reactAxios.css";
+// import "./reactAxios.scss";
 
 function ReactAxios() {
   return (
     <Suspense fallback={<Loader type='pacman' />}>
       <div className='axios_container'>
         <div className='axios_header_box'>
-          <h3>ReactAxios</h3>
+          <h2>
+            ReactAxi<span>os</span>
+          </h2>
         </div>
         <AxiosExemples />
         <div className='axios_section_box'>

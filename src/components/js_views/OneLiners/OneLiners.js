@@ -3,7 +3,7 @@ import React, { useState, lazy, Suspense } from "react";
 import Loader from "react-loaders";
 import { JsOneLinersRef } from "../../../utilities/fireBase_connection/FireBaseConnection";
 import { useCollection } from "../../../utilities/hooks/useCollection";
-import "./oneLiners.css";
+import "./oneLiners.scss";
 
 const SingleOneLiner = lazy(() => import("./SingleOneLiner"));
 export default function OneLiners() {
@@ -35,13 +35,12 @@ export default function OneLiners() {
           <ul>
             {data
               .filter((val) => {
-                if (searchInput == "") {
-                  return val;
-                } else if (
+                if (
                   val.Name.toLowerCase().includes(searchInput.toLowerCase())
                 ) {
                   return val;
                 }
+                return val;
               })
               .map((item, key) => {
                 return <SingleOneLiner key={key} data={item} />;

@@ -1,23 +1,14 @@
+@import "../../../App.scss";
 .axios_container {
-  padding: 1em;
-  width: 80%;
-  margin: 0 auto;
+  @include GeneralContainerStyle;
 }
 .axios_section_box {
   padding: 0.5em 1em;
 }
 .axios_header_box {
-  text-align: center;
-  font-size: 3em;
+  @include GeneralHeaderStyle;
 }
-.axios_section_header {
-  font-size: 2.5em;
-  padding: 0.3em 0;
-}
-.header {
-  font-size: 2em;
-  padding: 0.3em 0;
-}
+
 .axios_section_body p,
 .axios_section_body li {
   font-size: 1.3em;

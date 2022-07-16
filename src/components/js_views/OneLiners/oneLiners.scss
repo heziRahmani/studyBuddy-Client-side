@@ -1,19 +1,11 @@
+@import "../../../App.scss";
 .jsOneLiners_container {
   width: 80%;
   margin: 0 auto;
 }
 /* jsOneLiners header */
 .jsOneLiners_Header_Box {
-  text-align: start;
-  font-size: 2em;
-  color: #1f1313;
-  /* text-shadow: 4px 3px 0 #a2a9d7; */
-  padding: 2em 1.4em 2em 1.4em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-between;
-  position: relative;
+  @include GeneralHeaderStyle;
 }
 .oneLine_header {
   color: #222;
@@ -23,23 +15,6 @@
     4px 3px 1px #cccccc, 3px 4px 1px #eeeeee, 5px 4px 1px #cccccc,
     4px 5px 1px #eeeeee, 6px 5px 1px #cccccc, 5px 6px 1px #eeeeee,
     7px 6px 1px #cccccc;
-}
-.jsOneLiners_Header_Box h2 span {
-  position: relative;
-
-  /* background-color: #435E55FF; */
-  /* color: white; */
-}
-
-.jsOneLiners_Header_Box h2 span::after {
-  position: absolute;
-  content: "";
-  height: 80px;
-  width: 70px;
-  background-color: #435e55ff;
-  opacity: 0.5;
-  right: 0;
-  top: -15px;
 }
 
 /* singleOneLinersPage */

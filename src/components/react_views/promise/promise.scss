@@ -1,0 +1,31 @@
+//var imports
+
+@import "../../../App.scss";
+
+.promise_container {
+  @include GeneralContainerStyle;
+  .promise_header {
+    @include GeneralHeaderStyle;
+  }
+  .promise_body {
+    .section {
+      margin: 8em 0;
+      .codeBlock_container {
+        div {
+          span {
+            code:nth-child(2) {
+              // display: flex;
+              // flex-direction: column;
+            }
+          }
+        }
+      }
+    }
+  }
+  // p {
+  //   // font-size: App.$body_font_size;
+  //   letter-spacing: 1px;
+  //   line-height: 1.1em;
+  //   padding: 0.5em 0;
+  // }
+}

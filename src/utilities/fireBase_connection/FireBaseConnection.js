@@ -62,6 +62,7 @@ export const CollectionsDataRef = collection(db, "CollectionsData");
 export const JsOneLinersRef = collection(db, "JsOneLiners");
 export const toDoRef = collection(db, "toDo");
 export const sqlGeneralRef = collection(db, "sqlGeneral");
+export const promiseRef = collection(db, "promisePage");
 
 //querys
 
@@ -111,13 +112,9 @@ export function signOutFunc(params) {
     .catch((err) => console.log(err.message));
 }
 
-export function signInFunc(params) {
-  signInWithEmailAndPassword(
-    auth,
-    "hezirahmani@getDefaultNormalizer.com",
-    "H@e*z(i!"
-  )
-    .then((Credential) => console.log(Credential))
+export function signInFunc(email, password) {
+  signInWithEmailAndPassword(auth, email, password)
+    .then((Credential) => Credential)
     .catch((err) => console.log(err.message));
 }
 

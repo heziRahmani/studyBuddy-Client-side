@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from "react";
+import React from "react";
 
 import { IoLogoCss3, IoLogoJavascript, IoLogoHtml5 } from "react-icons/io";
 import { IoLogoFirebase } from "react-icons/io5";
@@ -6,12 +6,13 @@ import { DiGithubAlt, DiGithubFull } from "react-icons/di";
 
 import { FaReact } from "react-icons/fa";
 import "./about.scss";
-import Loader from "react-loaders";
 
-const SideBar = lazy(() => import("../../generalComponents/sideBar/SideBar"));
+import PageTransitionRotation from "../../generalComponents/pageTransition.js/PageTransition";
+
+import SideBar from "../../generalComponents/sideBar/SideBar";
 function About() {
   return (
-    <Suspense fallback={<Loader type='pacman' />}>
+    <PageTransitionRotation>
       <div className='mainAbout_container '>
         <SideBar />
 
@@ -86,7 +87,7 @@ function About() {
           </div>
         </div>
       </div>
-    </Suspense>
+    </PageTransitionRotation>
   );
 }
 

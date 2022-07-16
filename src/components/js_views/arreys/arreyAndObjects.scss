@@ -1,3 +1,5 @@
+@import "../../../App.scss";
+
 .arreyContainer {
   line-height: 1.5;
   height: max-content;
@@ -7,33 +9,7 @@
 
 /* arreys header */
 .arreyHeader {
-  text-align: start;
-  font-size: 2em;
-  color: #1f1313;
-  /* text-shadow: 4px 3px 0 #a2a9d7; */
-  padding: 2em 1.4em 2em 1.4em;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-between;
-  position: relative;
-}
-.arreyHeader h2 span {
-  position: relative;
-
-  /* background-color: #435E55FF; */
-  /* color: white; */
-}
-
-.arreyHeader h2 span::after {
-  position: absolute;
-  content: "";
-  height: 80px;
-  width: 70px;
-  background-color: #435e55ff;
-  opacity: 0.5;
-  right: 0;
-  top: -15px;
+  @include GeneralHeaderStyle;
 }
 
 /* arreys main section */
@@ -92,11 +68,11 @@
   list-style: none;
 }
 
-.jsCodBlock li {
-}
+// .jsCodBlock li {
+// }
 
-.jsCodBlock pre {
-}
+// .jsCodBlock pre {
+// }
 .jsCodBlock p,
 .jsCodBlock pre {
   white-space: break-spaces;
@@ -105,6 +81,7 @@
 .outputHeader {
   padding: 0.3em 0 0.3em 0;
 }
+
 /*  */
 @media screen and (max-width: 800px) {
   .arreyHeader {

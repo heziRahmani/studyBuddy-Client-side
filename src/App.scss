@@ -1,48 +1,81 @@
+/*                                        imports                                        */
+
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;600&family=Roboto:wght@400;700&family=Source+Code+Pro:wght@400;600&display=swap");
 @import "animate.css";
 // @import "~loaders.css/src/animations/pacman.scss";
-//general sass settings
+@import "./generalStaylSettings/generalMixin.scss";
+/*////////////////////////////////////////// general settings ////////////////////////////////////////// */
+
 // colors
 $color_maroon: #881b4c;
 $color_indigo: #1e2761;
 $color_indigo_ligther: #303972;
 /* font sizes */
-$headLine_font_size: 4rem;
+$headLine_font_size: 3.5rem;
 $sub-headLine_font_size: 2em;
+$card_header_font_size: 1.5em;
 $body_font_size: 1.3em;
 
 $sideBar_font_size: 1.5em;
 /* font color */
 $primery_font: #000000ff;
 $secondery_font: black;
+$body_font_color: rgb(77, 76, 83);
 /* font familys */
-$font-extra_font-BebasNeue: "Bebas Neue", cursive;
-$font-headerFont-Libre_Baskerville: "Libre Baskerville", serif;
-$font-sub-header-Poppins: "Poppins", sans-serif;
-$font-Source_Code_Pro: "Source Code Pro", monospace;
+$font-family-BebasNeue: "Bebas Neue", cursive;
+$font-family-Libre_Baskerville: "Libre Baskerville", serif;
+$font-family--Poppins: "Poppins", sans-serif;
+$font-family-Source_Code_Pro: "Source Code Pro", monospace;
+$font-family-Roboto: "Roboto", sans-serif;
 
-$font-family_Roboto: "Roboto", sans-serif;
+/*general @mixin*/
+// @mixin GeneralContainerStyle {
+//   padding: 1em;
+//   width: 75%;
+//   margin: 0 auto;
+//   text-transform: capitalize;
+// }
 
-// general css setting
-*,
-::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: var(--font-family_Roboto);
-  text-decoration: none;
-}
+// @mixin GeneralHeaderStyle {
+//   text-align: start;
+//   font-size: 2em;
+//   color: #1f1313;
+//   /* text-shadow: 4px 3px 0 #a2a9d7; */
+//   padding: 2em 1.4em 2em 0em;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   justify-content: space-between;
+//   position: relative;
+//   text-transform: uppercase;
 
-body {
-  background-color: rgb(215, 214, 218);
-  scroll-behavior: smooth;
-  background: var(--ligth-readient-two-colors);
-}
-ul li {
-  list-style: none;
-  list-style-type: none;
-}
+//   h2 {
+//     letter-spacing: 4px;
+//     font-family: $font-family-Libre_Baskerville;
+
+//     span {
+//       position: relative;
+//       font-family: $font-family-Libre_Baskerville;
+//       // font-family: $font-family-BebasNeue;
+//       // font-family: $font-family-Roboto;
+//       // font-family: $font-family-Source_Code_Pro;
+//       // font-family: $font-family--Poppins;
+
+//       &::after {
+//         position: absolute;
+//         content: "";
+//         height: 80px;
+//         width: 65px;
+//         background-color: #435e55ff;
+//         opacity: 0.5;
+//         right: -1px;
+//         top: -15px;
+//       }
+//     }
+//   }
+// }
+
+/*////////////////////////////////////////// general css setting ////////////////////////////////////////// */
 
 :root {
   --ligth-readient-two-colors: linear-gradient(

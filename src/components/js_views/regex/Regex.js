@@ -11,13 +11,13 @@ export default function Regex() {
 
   //sort data
   let characterClasses = data.filter(
-    (item) => item.Category == "Character Classes"
+    (item) => item.Category === "Character Classes"
   );
-  let anchors = data.filter((item) => item.Category == "Anchors");
-  let flags = data.filter((item) => item.Category == "Flags");
-  let quantifiers = data.filter((item) => item.Category == "quantifiers");
+  let anchors = data.filter((item) => item.Category === "Anchors");
+  let flags = data.filter((item) => item.Category === "Flags");
+  let quantifiers = data.filter((item) => item.Category === "quantifiers");
   let groupAndRanges = data.filter(
-    (item) => item.Category == "Group and Ranges"
+    (item) => item.Category === "Group and Ranges"
   );
   useEffect(() => {
     console.log("effct");
@@ -25,7 +25,9 @@ export default function Regex() {
   return (
     <div className='regex_main_container'>
       <div id='regexHeader_container' className='regexHeader_container'>
-        <h2>Regex</h2>
+        <h2>
+          Reg<span>ex</span>
+        </h2>
       </div>
       <div id='regexBody_container' className='regexBody_container'>
         {/* 1 characterClasses*/}

@@ -122,8 +122,8 @@
 
       color: rgb(105, 101, 114) !important;
     }
-    &:active {
-    }
+    // &:active {
+    // }
   }
   /* side bar header */
   .sideBarHeader {
@@ -168,8 +168,8 @@
         .liSpan {
           padding: 0 0 0 0.7em;
 
-          span {
-          }
+          // span {
+          // }
         }
         .iconBox {
           svg {
@@ -181,8 +181,8 @@
       .subLinks {
         font-size: 0.8em;
 
-        li {
-        }
+        // li {
+        // }
         .subListSideBarLink {
           display: flex;
           flex-direction: row;
@@ -205,18 +205,18 @@
   }
 }
 
-.sideBar_body ul li:hover .subLinks {
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: center;
-  // align-items: center;
-  // opacity: 1;
-}
+// .sideBar_body ul li:hover .subLinks {
+//   // display: flex;
+//   // flex-direction: column;
+//   // justify-content: center;
+//   // align-items: center;
+//   // opacity: 1;
+// }
 
-.sideBarHeader svg {
-  // animation-delay: 3m;
-  // animation: svgAnime 10s ease-in-out infinite both;
-}
+// .sideBarHeader svg {
+//   // animation-delay: 3m;
+//   // animation: svgAnime 10s ease-in-out infinite both;
+// }
 @keyframes svgAnime {
   0% {
     stroke-dasharray: 0%;

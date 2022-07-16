@@ -7,4 +7,5 @@
 
 .reactDashboardMainBox {
   overflow: hidden scroll;
+  margin: 0 auto;
 }
