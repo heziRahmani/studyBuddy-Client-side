@@ -154,7 +154,7 @@
     display: flex;
     position: relative;
     flex-direction: column;
-
+    list-style: none;
     .sideBar_li {
       display: flex;
 
@@ -180,7 +180,7 @@
       }
       .subLinks {
         font-size: 0.8em;
-
+        list-style: none;
         // li {
         // }
         .subListSideBarLink {
@@ -188,6 +188,7 @@
           flex-direction: row;
           overflow-wrap: break-word;
           margin-top: 0.1em;
+          list-style: none;
 
           color: #333;
           .subListLiSpan {

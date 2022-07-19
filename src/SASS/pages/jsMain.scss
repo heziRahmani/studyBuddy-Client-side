@@ -2,14 +2,20 @@
   display: flex;
   min-height: 100vh;
   height: 100vh;
+  width: 100%;
   position: relative;
   overflow: hidden;
+  .jsMainBody_container {
+    // margin: 0 auto;
+    width: 100%;
+    overflow-y: scroll;
+    .jsMainBody_box {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
 }
 
-.jsMainBody_container {
-  margin: 0 auto;
-  overflow-y: scroll;
-}
 /*  */
 @media screen and (max-width: 400px) {
   .jsMainBody_container {

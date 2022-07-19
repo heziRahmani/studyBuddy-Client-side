@@ -3,7 +3,7 @@ import CodeBlock from "../../../generalComponents/codeBlock/CodeBlock";
 import { query } from "firebase/firestore";
 import { promiseRef } from "../../../utilities/fireBase_connection/FireBaseConnection";
 import { useCollection } from "../../../utilities/hooks/useCollection";
-import "./promise.scss";
+// import "./promise.scss";
 export default function Promise() {
   //gets the data from fireBase
   const q = query(promiseRef);

@@ -13,7 +13,7 @@ export default function useDeleteDoc(collName, id) {
     if (_id && _collName) {
       const docRef = doc(db, _collName, _id);
       deleteDoc(docRef).then((data) => {
-        console.log(data);
+        // console.log(data);
       });
 
       return "done";

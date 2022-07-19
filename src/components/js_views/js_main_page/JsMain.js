@@ -1,6 +1,6 @@
 import React, { lazy, Suspense } from "react";
 
-import "./jsMain.css";
+// import "./jsMain.scss";
 
 import { Outlet } from "react-router";
 import Loader from "react-loaders";

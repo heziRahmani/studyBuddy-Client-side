@@ -5,7 +5,6 @@ import { IoLogoFirebase } from "react-icons/io5";
 import { DiGithubAlt, DiGithubFull } from "react-icons/di";
 
 import { FaReact } from "react-icons/fa";
-import "./about.scss";
 
 import PageTransitionRotation from "../../generalComponents/pageTransition.js/PageTransition";
 

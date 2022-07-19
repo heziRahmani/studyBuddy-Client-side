@@ -10,7 +10,7 @@ function ReactAxios() {
       <div className='axios_container'>
         <div className='axios_header_box'>
           <h2>
-            ReactAxi<span>os</span>
+            React Axi<span>os</span>
           </h2>
         </div>
         <AxiosExemples />

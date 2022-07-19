@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import Loader from "react-loaders";
 import { Outlet } from "react-router-dom";
 import SideBar from "../../../generalComponents/sideBar/SideBar";
-import "../sqlDashboard/sqlDashboard.css";
+
 function SqlDashboard() {
   return (
     <Suspense fallback={<Loader type='pacman' />}>

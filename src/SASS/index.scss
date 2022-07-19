@@ -1,0 +1,19 @@
+//variables
+@import "./variables";
+//base
+@import "./base";
+//mixin
+@import "./generalMixin";
+//pages
+@import "./pages/about.scss";
+@import "./pages/htmlTags.scss";
+@import "./pages/arreyAndObjects.scss";
+@import "./pages/jsMain.scss";
+@import "./pages/oneLiners.scss";
+@import "./pages/regex.scss";
+@import "./pages/LandingPage.scss";
+@import "./pages/environmentVariables.scss";
+@import "./pages/promise.scss";
+@import "./pages/reactAxios.scss";
+@import "./pages/sqlGeneral.scss";
+@import "./pages/sqlDashboard.scss";

@@ -17,7 +17,7 @@
   justify-content: space-between;
   position: relative;
   text-transform: uppercase;
-
+  min-width: 100%;
   h2 {
     letter-spacing: 4px;
     font-family: $font-family-Libre_Baskerville;
@@ -29,15 +29,15 @@
       // font-family: $font-family-Roboto;
       // font-family: $font-family-Source_Code_Pro;
       // font-family: $font-family--Poppins;
-
+      color: darkgoldenrod;
       &::after {
         position: absolute;
         content: "";
         height: 80px;
-        width: 65px;
+        width: 1.7em;
         background-color: #435e55ff;
         opacity: 0.5;
-        right: -1px;
+        right: 0px;
         top: -15px;
       }
     }

@@ -49,29 +49,7 @@ export default function SideBar() {
       <div id='sideBarContainer' className='sideBarContainer'>
         {/* sideBar header */}
 
-        <div id='sideBarHeader' className='sideBarHeader'>
-          <svg
-            id='jsHeader'
-            width='80%'
-            height='80%'
-            viewBox={svgViewBox}
-            fill='none'>
-            <defs>
-              <linearGradient id='grad1' x1='0%' y1='0%' x2='100%' y2='0%'>
-                <stop
-                  offset='0%'
-                  style={{ stopColor: "rgb(255,0,0)", stopOpacity: 0 }}
-                />
-                <stop
-                  offset='100%'
-                  style={{ stopColor: "rgb(255,0,0)", stopOpacity: 0 }}
-                />
-              </linearGradient>
-            </defs>
-            <ellipse cx='200' cy='70' rx='85' ry='55' fill='url(#grad1)' />
-            <path d={svg ? svg : ""} stroke='#ffffff' />
-          </svg>
-        </div>
+        <div id='sideBarHeader' className='sideBarHeader'></div>
 
         {/* css sideBar Body */}
         <div id='sideBar_body' className='sideBar_body'>

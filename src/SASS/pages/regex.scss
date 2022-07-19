@@ -1,10 +1,8 @@
 //var imports
-@use "../../../App.scss";
-@import "../../../App.scss";
+// @use "../../../App.scss";
+// @import "../../../App.scss";
 
 .regex_main_container {
-  margin: 0 auto;
-  width: 80%;
   font-size: 1.1em;
   padding: 1em;
   line-height: 20px;
@@ -53,7 +51,7 @@
           line-height: 22px;
           span {
             font-size: 1.2em;
-            background: -webkit-linear-gradient(App.$color_maroon, #333);
+            // background: -webkit-linear-gradient($color_maroon, #333);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }

@@ -10,12 +10,12 @@ export default function useAddDoc(toDoRef, data) {
     if (data) {
       addDoc(toDoRef, { ...data })
         .then((data) => {
-          console.log(data);
+          // console.log(data);
           setAddDocData(data);
           setOldToDo(data.toDo);
         })
         .catch((err) => {
-          console.log(err);
+          // console.log(err);
           setAddDocData(err);
         });
     }

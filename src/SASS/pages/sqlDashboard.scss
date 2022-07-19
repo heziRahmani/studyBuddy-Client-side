@@ -1,0 +1,12 @@
+.mainSqlDashboard_container {
+  display: flex;
+  max-height: 100vh;
+  overflow: hidden;
+  .mainSqlDashboard_box {
+    @include GeneralContainerStyle;
+    overflow-y: scroll;
+    .sqlMainBody_box {
+      /* margin: 0 auto; */
+    }
+  }
+}

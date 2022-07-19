@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import Loader from "react-loaders";
 import { Link, NavLink } from "react-router-dom";
-import "./LandingPage.scss";
+// import "./LandingPage.scss";
 export default function LandingPage() {
   return (
     <div className='landingPage_sectionOne_container'>

@@ -43,9 +43,9 @@ function Single_toDo({ data }) {
       createdDateTime: data.createdDateTime ? data.createdDateTime : "",
       tag: _tagRef.current.value ? _tagRef.current.value : "",
     }).then(() => {
-      console.log(_prioretyRef.current.value);
+      // console.log(_prioretyRef.current.value);
 
-      console.log("update done");
+      // console.log("update done");
       setediteble(false);
     });
   }

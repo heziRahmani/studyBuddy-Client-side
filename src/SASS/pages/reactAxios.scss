@@ -1,18 +1,18 @@
-@import "../../../App.scss";
 .axios_container {
   @include GeneralContainerStyle;
-}
-.axios_section_box {
-  padding: 0.5em 1em;
-}
-.axios_header_box {
-  @include GeneralHeaderStyle;
-}
-
-.axios_section_body p,
-.axios_section_body li {
-  font-size: 1.3em;
-  line-height: 1.5em;
+  .axios_header_box {
+    @include GeneralHeaderStyle;
+  }
+  .axios_section_box {
+    padding: 0.5em 1em;
+    .axios_section_body {
+      .axios_section_body p,
+      .axios_section_body li {
+        font-size: 1.3em;
+        line-height: 1.5em;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {

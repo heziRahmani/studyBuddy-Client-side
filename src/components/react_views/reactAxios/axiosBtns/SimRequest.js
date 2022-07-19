@@ -18,7 +18,7 @@ export default function SimRequest({
       ])
       .then(
         axios.spread((todos, posts) => {
-          console.log(posts);
+          // console.log(posts);
           setstatus(todos.status);
           setheaders(JSON.stringify(todos.headers, null, 2));
           setdata(JSON.stringify(todos.data, null, 2));

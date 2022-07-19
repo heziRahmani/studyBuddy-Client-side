@@ -29,7 +29,7 @@ function ToDoForm() {
     setNewToDo(todoObj);
     document.querySelector(".input_box").value = "";
     document.querySelector(".toDo_Select_priorety").value = "";
-    console.log(todoObj);
+    // console.log(todoObj);
   };
 
   //addToDataBase

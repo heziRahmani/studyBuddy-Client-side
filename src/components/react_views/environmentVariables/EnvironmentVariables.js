@@ -1,13 +1,13 @@
 import React, { Suspense } from "react";
 import Loader from "react-loaders";
-import "./environmentVariables.scss";
+// import "./environmentVariables.scss";
 function EnvironmentVariables() {
   return (
     <Suspense fallback={<Loader type='pacman' />}>
       <div className='envPage_main_container'>
         <heder className='header_container'>
           <h2>
-            environment variab<span>les</span>
+            environment variabl<span>es</span>
           </h2>
         </heder>
         <div className='envPage_section_subHeader'>

@@ -7,12 +7,12 @@ export function UpdateFormContext_provider({ children }) {
   // update to do form
   const updateFormData = (data) => {
     setContextItems(data);
-    console.log(contextItems);
+    // console.log(contextItems);
   };
   // toDo Dashboard Data
   const toDoDashboardData = async (data) => {
     setToDoDashboard(data);
-    console.log(toDoDashboard);
+    // console.log(toDoDashboard);
   };
   return (
     <UpdateFormContext.Provider

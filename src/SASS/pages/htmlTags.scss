@@ -1,7 +1,6 @@
-@import "../../../App.scss";
-
 .htmlTags_container {
   @include GeneralContainerStyle;
+
   .htmlTags_header {
     @include GeneralHeaderStyle;
   }

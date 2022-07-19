@@ -3,7 +3,7 @@ import { query } from "firebase/firestore";
 import { collRegexRef } from "../../../utilities/fireBase_connection/FireBaseConnection";
 import { useCollection } from "../../../utilities/hooks/useCollection";
 //style import
-import "./regex.scss";
+// import "./regex.scss";
 import RegexData from "./RegexData";
 export default function Regex() {
   const q = query(collRegexRef);
@@ -20,7 +20,7 @@ export default function Regex() {
     (item) => item.Category === "Group and Ranges"
   );
   useEffect(() => {
-    console.log("effct");
+    // console.log("effct");
   }, []);
   return (
     <div className='regex_main_container'>

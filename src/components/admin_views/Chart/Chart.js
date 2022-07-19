@@ -11,7 +11,7 @@ export default function Chart() {
   const q = query(CollectionsDataRef);
   let { data } = useCollection(q);
   console.log(window.location.pathname);
-  console.log(data);
+  // console.log(data);
 
   //filterind the data
   // if (window.location.pathname=="/js/dashboard") {

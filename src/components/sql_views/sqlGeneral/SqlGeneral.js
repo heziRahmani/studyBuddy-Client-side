@@ -3,7 +3,7 @@ import React, { useState, Suspense } from "react";
 import Loader from "react-loaders";
 import { sqlGeneralRef } from "../../../utilities/fireBase_connection/FireBaseConnection";
 import { useCollection } from "../../../utilities/hooks/useCollection";
-import "../sqlGeneral/sqlGeneral.css";
+// import "../sqlGeneral/sqlGeneral.css";
 import SingleSqlGeneral from "./SingleSqlGeneral";
 export default function SqlGeneral() {
   const [searchInput, setSearchInput] = useState("");
@@ -16,7 +16,7 @@ export default function SqlGeneral() {
       <div className='sqlGeneral_container'>
         <div id='sqlHeader' className='sqlHeader'>
           <h2>
-            Sql Gene<span>ral</span>
+            Sql Gener<span>al</span>
           </h2>
 
           <div className='searchBox'>
@@ -37,7 +37,7 @@ export default function SqlGeneral() {
             {data &&
               data
                 .filter((val) => {
-                  if (searchInput == "") {
+                  if (searchInput === "") {
                     return val;
                   } else if (
                     val.titel.toLowerCase().includes(searchInput.toLowerCase())

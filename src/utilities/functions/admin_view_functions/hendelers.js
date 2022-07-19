@@ -37,6 +37,6 @@ export function updateDataBasHendeler(_id, _statusRef, _titelRef, _toDoRef) {
     titel: _titelRef ? _titelRef : "",
     toDo: _toDoRef ? _toDoRef : "",
   }).then(() => {
-    console.log("update done");
+    // console.log("update done");
   });
 }

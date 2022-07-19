@@ -3,7 +3,7 @@ import React, { useState, lazy, Suspense } from "react";
 import Loader from "react-loaders";
 import { JsOneLinersRef } from "../../../utilities/fireBase_connection/FireBaseConnection";
 import { useCollection } from "../../../utilities/hooks/useCollection";
-import "./oneLiners.scss";
+// import "./oneLiners.scss";
 
 const SingleOneLiner = lazy(() => import("./SingleOneLiner"));
 export default function OneLiners() {
@@ -16,7 +16,7 @@ export default function OneLiners() {
       <div className='jsOneLiners_container'>
         <div className='jsOneLiners_Header_Box'>
           <h2>
-            Js One Lin<span>ers</span>
+            Js One Line<span>rs</span>
           </h2>
           <div className='searchBox'>
             <div className='searchShadowBox'></div>
@@ -40,7 +40,6 @@ export default function OneLiners() {
                 ) {
                   return val;
                 }
-                return val;
               })
               .map((item, key) => {
                 return <SingleOneLiner key={key} data={item} />;

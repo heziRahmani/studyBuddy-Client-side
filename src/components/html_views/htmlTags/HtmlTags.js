@@ -4,7 +4,7 @@ import Loader from "react-loaders";
 
 import { collhtmlTagsRef } from "../../../utilities/fireBase_connection/FireBaseConnection";
 import { useCollection } from "../../../utilities/hooks/useCollection";
-import "./htmlTags.scss";
+
 const SingleHtmlTag = lazy(() => import("./singleHtmlTag"));
 
 export default function HtmlTags() {
@@ -21,7 +21,7 @@ export default function HtmlTags() {
       <div id='htmlTags_container' className='htmlTags_container'>
         <div id='htmlTags_header' className='htmlTags_header'>
           <h2>
-            HTML <span>TAGS</span>
+            HTML TA<span>GS</span>
           </h2>
         </div>
         <div

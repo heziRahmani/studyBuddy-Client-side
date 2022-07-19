@@ -49,8 +49,8 @@ export default function AdminDashboard() {
     }
   });
   useEffect(() => {
-    console.log(data);
-    console.log(styleCard);
+    // console.log(data);
+    // console.log(styleCard);
   }, [data]);
 
   return (

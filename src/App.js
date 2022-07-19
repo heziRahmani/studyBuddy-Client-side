@@ -1,5 +1,5 @@
-import { lazy, Suspense, useState } from "react";
-import "./App.scss";
+import { lazy, Suspense } from "react";
+import "./Css/index.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Regex from "./components/js_views/regex/Regex";
 import OneLiners from "./components/js_views/OneLiners/OneLiners";
@@ -17,7 +17,7 @@ import About from "./components/about/About";
 import SqlDashboard from "./components/sql_views/sqlDashboard/SqlDashboard";
 import SqlGeneral from "./components/sql_views/sqlGeneral/SqlGeneral";
 import ToDo from "./components/admin_views/toDo/ToDo";
-import ReactGeneral from "./components/react_views/reactGeneral/ReactGeneral";
+
 import EnvironmentVariables from "./components/react_views/environmentVariables/EnvironmentVariables";
 import ReactDashboard from "./components/react_views/reactDashboard/ReactDashboard";
 import ReactAxios from "./components/react_views/reactAxios/ReactAxios";

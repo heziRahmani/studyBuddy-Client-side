@@ -26,7 +26,7 @@ export default function CustomHeader({
         config
       )
       .then((res) => {
-        console.log(res);
+        // console.log(res);
         setstatus(res.status);
         setheaders(JSON.stringify(res.headers, null, 2));
         setdata(JSON.stringify(res.data, null, 2));

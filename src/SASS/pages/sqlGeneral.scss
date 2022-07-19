@@ -1,0 +1,28 @@
+.sqlGeneral_container {
+  .sqlHeader {
+    overflow-y: auto;
+    @include GeneralHeaderStyle;
+  }
+}
+
+// .sqlHeader h2 span::after {
+//   position: absolute;
+//   content: "";
+//   height: 80px;
+//   width: 70px;
+//   background-color: #435e55ff;
+//   opacity: 0.5;
+//   right: 0;
+//   top: -15px;
+// }
+
+@media screen and (max-width: 600px) {
+  .sqlHeader {
+    flex-direction: column;
+    padding: 1em 0em;
+    font-size: 1.5em;
+  }
+  .sqlHeader h2 {
+    padding: 1em 0em;
+  }
+}
